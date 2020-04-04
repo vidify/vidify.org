@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vidify.org/posts/</loc>
+    <loc>https://vidify.org/blog/</loc>
     <lastmod>2020-04-02T01:49:12+02:00</lastmod>
   </url>
   
@@ -23,7 +23,7 @@
   </url>
   
   <url>
-    <loc>https://vidify.org/posts/launch/</loc>
+    <loc>https://vidify.org/blog/launch/</loc>
     <lastmod>2020-04-02T01:49:12+02:00</lastmod>
   </url>
   
@@ -57,10 +57,6 @@
                 hreflang="en"
                 href="https://vidify.org/tags/"
                 />
-  </url>
-  
-  <url>
-    <loc>https://vidify.org/blog/</loc>
   </url>
   
   <url>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="The wiki entries are saved inside wiki/">
+<meta name="description" content="The wiki articles to learn more about Vidify">
 
 <meta name="generator" content="Hugo 0.68.3" />
 
@@ -30,10 +30,7 @@
 
 </head>
 <body id="body"><!-- Fixed Navigation -->
-
-
 <section class="header navigation top-bar animated-header">
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -80,7 +77,7 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/wiki/gettingstarted/" >Getting Started</a>
+                                <a class="nav-link" href="https://vidify.org/" >Home</a>
                             </li>
                             
                             
@@ -116,6 +113,7 @@
     </div>
 </section>
 <div id="content">
+
 <!-- Page Title Section Start -->
 <section class="single-page-header">
     <div class="container">
@@ -135,53 +133,216 @@
     </div>
 </section>
 
-<!-- Blog Section Start -->
-<section class="blog section" id="blog">
+<!-- Wiki Section Start -->
+<section class="blog section" id="wiki">
     <div class="container">
-        <div class="row">
-            
-            
-                
-<!-- single blog post -->
-<article class="col-12 col-md-4">
-    <div class="post-item">
-        
-        <div class="post-title">
-            <h3 class="mt-0">
-                <a href="https://vidify.org/posts/launch/">Website Launch</a>
-            </h3>
-        </div>
-        <div class="post-meta">
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <span>By</span>
-                    
-                </li>
-                <li class="list-inline-item">
-                    <span>at</span>
-                    <span>April 2, 2020</span>
-                </li>
-            </ul>
-        </div>
-        <div class="post-content">
-            <p>Website launch I&rsquo;m officially releasing Vidify&rsquo;s website!
-This site is intended for non-developers, I&rsquo;ll migrate part of the GitHub documentation here on how to use Vidify. The wiki …</p>
-        </div>
-        <a class="btn btn-main" href="https://vidify.org/posts/launch/">Read more</a>
-    </div>
-</article>
-<!-- /single blog post -->
+        <h1 id="getting-started">Getting Started</h1>
+<h2 id="installation">Installation</h2>
+<p>Vidify is intended to be modular. By default, it includes support for the most popular music players (a.k.a. <a href="#the-apis">APIs</a>). Same goes for the <a href="#the-players">video players</a> (currently, <a href="https://www.videolan.org/vlc/index.html">VLC</a> by default). This can be extended by installing the required dependencies listed in their sections.</p>
+<p>Here are the different ways to install Vidify, depending on your Operating System:</p>
+<ul>
+<li><strong>Cross-platform:</strong> With <a href="https://pypi.org/project/vidify">pip</a>: <code>pip install --user vidify</code>. Optional APIs and Players can be installed with <code>pip install --user vidify[extra1,extra2]</code>, which is equivalent to installing the list of dependencies needed for <code>extra1</code> and <code>extra2</code>.</li>
+<li><strong>Windows or Linux:</strong> Using the binaries from the <a href="https://github.com/vidify/vidify/releases">latest stable releases</a>. These include support for all optional APIs, and use mpv as the player.</li>
+<li><strong>Linux:</strong>
+<ul>
+<li>Any distro: you can use <a href="https://snapcraft.io/vidify-qt">snap</a> to install it: <code>snap install vidify-qt</code>.</li>
+<li>Arch Linux: you can install it from the AUR: <a href="https://aur.archlinux.org/packages/vidify/"><code>vidify</code></a>. Maintained by me (<a href="https://github.com/marioortizmanero">marioortizmanero</a>).</li>
+<li>Gentoo Linux: there&rsquo;s an ebuild maintained by <a href="https://github.com/AndrewAmmerlaan">AndrewAmmerlaan</a> in the <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU overlay</a> at <a href="https://gpo.zugaina.org/media-video/vidify">media-video/vidify</a>: <code>eselect repository enable guru &amp;&amp; emerge --sync guru &amp;&amp; emerge vidify</code></li>
+<li><em>Feel free to upload it to your distro&rsquo;s repositories! Let me know in an issue so that I can add it to this list.</em></li>
+</ul>
+</li>
+</ul>
+<p><em>Note: Vidify requires Python &gt;= 3.6.</em></p>
+<h3 id="the-apis">The APIs</h3>
+<p>An API is simply a source of information about the music playing on a device. For example, the Spotify desktop client, or iTunes. Here are the currently supported ones:</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th align="center">Wiki link</th>
+<th>Extra requirements</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Linux Media Players (<code>mpris_linux</code>*)</td>
+<td align="center"><a href="https://github.com/vidify/vidify/wiki/Linux-Media-Players">🔗</a></td>
+<td><em>Installed by default</em> (see the wiki)</td>
+<td>Any MPRIS compatible media player for Linux or BSD (99% of them, like Spotify, Clementine, VLC&hellip;).</td>
+</tr>
+<tr>
+<td>Spotify for Windows &amp; MacOS (<code>swspotify</code>*)</td>
+<td align="center"><a href="https://github.com/vidify/vidify/wiki/Spotify-for-Windows-and-MacOS">🔗</a></td>
+<td><em>Installed by default</em></td>
+<td>The Spotify desktop app for Windows &amp; MacOS, using the <a href="https://github.com/SwagLyrics/SwSpotify">SwSpotify</a> library.</td>
+</tr>
+<tr>
+<td>Spotify Web (<code>spotify_web</code>*)</td>
+<td align="center"><a href="https://github.com/vidify/vidify/wiki/Spotify-Web-API">🔗</a></td>
+<td><em>Installed by default</em></td>
+<td>The official Spotify Web API, using <a href="https://github.com/felix-hilden/tekore">Tekore</a>. Check the wiki for more details on how to set it up.</td>
+</tr>
+</tbody>
+</table>
+<p>* The name inside parenthesis is used as a key for the <a href="#usage">arguments</a> and the <a href="#the-config-file">config</a> options. <code>--api mpris_linux</code> would force using the Linux Media Players API, for instance. It&rsquo;s also used for the extra dependencies installation with pip: <code>pip install vidify[extra1]</code> would install all the extra requirements for <code>extra1</code> with pip.</p>
+<h3 id="the-players">The players</h3>
+<p>The embedded video players inside the app. The default one is VLC because it&rsquo;s more popular, but you can use others if you have the player itself installed, and the Python extra dependencies.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Extra requirements</th>
+<th>Description</th>
+<th>Arguments/config options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VLC (<code>vlc</code>)</td>
+<td><a href="https://www.videolan.org/vlc/#download">VLC</a></td>
+<td>The default video player. Widely used and very solid.</td>
+<td><code>--vlc-args &lt;VLC_ARGS&gt;</code></td>
+</tr>
+<tr>
+<td>Mpv (<code>mpv</code>)</td>
+<td><a href="https://mpv.io/installation/">Mpv</a>, <code>python-mpv</code></td>
+<td>A command-line portable video player. More lightweight and precise than VLC.</td>
+<td><code>--mpv-flags &lt;MPV_ARGS&gt;</code> (only boolean flags)</td>
+</tr>
+<tr>
+<td>External (<code>external</code>)</td>
+<td>Installed by default</td>
+<td>Play the videos on external devices. Check the <a href="#the-external-player">external players section</a> for more.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<p>For now, the only way to specify what player to use is with <a href="#usage">arguments</a> or inside the <a href="#the-config-file">config file</a> with the internal name. You can use <code>--player mpv</code> or save it in your config file for future usage:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
+<span style="color:#a6e22e">player</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">mpv</span>
+</code></pre></div><h4 id="the-external-player">The external player</h4>
+<p>The external player lets you play Vidify&rsquo;s music videos essentially anywhere. It will send all the music video information to an external application. Here are the current implementations:</p>
+<ul>
+<li><strong>Vidify TV</strong>: available on Android, Android TV and Amazon Fire Stick TV. <a href="https://play.google.com/store/apps/details?id=com.glowapps.vidify">Play Store page</a>.</li>
+</ul>
+<h3 id="audio-synchronization">Audio synchronization</h3>
+<p>Vidify has an audio synchronization feature. The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress.</p>
+<p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
+<ul>
+<li>FFTW: <code>libfftw3</code> on Debian-based distros.</li>
+<li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your path.</li>
+<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos.</li>
+<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your path.</li>
+</ul>
+<p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the vidify snap.</p>
+<p>It can be activated with <code>--audiosync</code>, or inside your <a href="#the-config-file">config file</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
+<span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
+<p><em>Note: if when using audiosync there&rsquo;s no sound, you might need to disable stream target device restore by editing the corresponing line in <code>/etc/pulse/default.pa</code> to <code>load-module module-stream-restore restore_device=false</code>.</em></p>
+<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing. Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
+<p><img src="images/pavucontrol-audiosync.png" alt="pavucontrol"></p>
+<h2 id="usage">Usage</h2>
+<p>The app has an interface that will guide you through most of the set-up, but you can use command line arguments and the config file for more advanced options (and until the GUI is completely finished):</p>
+<!-- raw HTML omitted -->
+<pre><code>usage: vidify [-h] [-v] [--debug] [--config-file CONFIG_FILE] [-n] [-f] [--dark-mode] [--stay-on-top]
+              [--width WIDTH] [--height HEIGHT] [-a API] [-p PLAYER] [--audiosync]
+              [--audiosync-calibration AUDIOSYNC_CALIBRATION] [--vlc-args VLC_ARGS]
+              [--mpv-flags MPV_FLAGS] [--client-id CLIENT_ID] [--client-secret CLIENT_SECRET]
+              [--redirect-uri REDIRECT_URI]
+</code></pre><table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-n</code>, <code>--no-lyrics</code></td>
+<td>do not print lyrics.</td>
+</tr>
+<tr>
+<td><code>-f</code>, <code>--fullscreen</code></td>
+<td>play videos in fullscreen mode.</td>
+</tr>
+<tr>
+<td><code>--dark-mode</code></td>
+<td>enables dark mode for the GUI.</td>
+</tr>
+<tr>
+<td><code>--stay-on-top</code></td>
+<td>the app window will stay on top of other apps.</td>
+</tr>
+<tr>
+<td><code>--width &lt;WIDTH&gt;</code></td>
+<td>set the width for the downloaded videos (this is useful to play lower quality videos if your connection isn&rsquo;t good).</td>
+</tr>
+<tr>
+<td><code>--height &lt;HEIGHT&gt;</code></td>
+<td>set the height for the downloaded videos.</td>
+</tr>
+<tr>
+<td><code>-a</code>, <code>--api</code></td>
+<td>specify the API to use. See the <a href="#the-apis">APIs section</a> for more info about the supported APIs.</td>
+</tr>
+<tr>
+<td><code>-p</code>, <code>--player</code></td>
+<td>specify the player to use. See the <a href="#the-players">Players section</a> for more info about the supported players.</td>
+</tr>
+<tr>
+<td><code>--audiosync</code></td>
+<td>enables the <a href="#audio-synchronization">Audio Synchronization</a> feature (disabled by default).</td>
+</tr>
+<tr>
+<td><code>--audiosync-calibration</code></td>
+<td>You can calibrate the delay in milliseconds audiosync returns with this. It can be positive or negative. The default is 0ms.</td>
+</tr>
+<tr>
+<td><code>--config-file &lt;PATH&gt;</code></td>
+<td>indicate the path of your <a href="#the-config-file">config file</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="the-config-file">The config file</h3>
+<p>The configuration file is created by default at your usual config directory:</p>
+<ul>
+<li>Linux: <code>~/.config/vidify/config.ini</code> (or in <code>$XDG_CONFIG_HOME</code>, if defined)</li>
+<li>Mac OS X: <code>~/Library/Preferences/vidify/config.ini</code></li>
+<li>Windows: <code>C:\Users\&lt;username&gt;\AppData\Local\vidify\vidify\config.ini</code></li>
+</ul>
+<p>You can use a custom one by passing <code>--config-file &lt;PATH&gt;</code> as an argument. The config file is overriden by the configuration passed as arguments, but keeps your settings for future usage. <a href="https://github.com/vidify/vidify/blob/master/example.ini">Here&rsquo;s an example of one</a>. It uses the <a href="https://en.wikipedia.org/wiki/INI_file">INI config file formatting</a>. Most options are inside the <code>[Defaults]</code> section.</p>
+<p>All the available options for the config file are the same as the arguments listed in the <a href="#usage">Usage section</a>, except for <code>--config-file &lt;PATH&gt;</code>, which is only an argument. Their names are the same but with underscores instead of dashes. For example, <code>--use-mpv</code> would be equivalent to <code>use_mpv = true</code>.</p>
+<h2 id="faq">FAQ</h2>
+<h3 id="vidify-doesnt-work-correctly-with-python-38-and-pyside2">Vidify doesn&rsquo;t work correctly with Python 3.8 and PySide2</h3>
+<p>PySide2 started supporting Python 3.8 with the 5.14 release. Make sure you&rsquo;re using an updated version and try again. <code>TypeError: 'Shiboken.ObjectType' object is not iterable</code> will be raised otherwise.</p>
+<h3 id="modulenotfounderror-no-module-named-gi-when-using-a-virtual-environment"><code>ModuleNotFoundError: No module named 'gi'</code> when using a virtual environment</h3>
+<p>For some reason, <code>python-gobject</code> may not be available inside a virtual environment. You can create a symlink inside it with:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s <span style="color:#e6db74">&#34;/usr/lib/python3.8/site-packages/gi&#34;</span> <span style="color:#e6db74">&#34;</span>$venv_dir<span style="color:#e6db74">/lib/python3.8/site-packages&#34;</span>
+</code></pre></div><p>or install it with pip following <a href="https://pygobject.readthedocs.io/en/latest/getting_started.html">this guide</a>.</p>
+<h3 id="vidify-doesnt-recognize-some-downloaded-songs">Vidify doesn&rsquo;t recognize some downloaded songs</h3>
+<p>If the song doesn&rsquo;t have a metadata field with its title and artist (the latter is optional), Vidify is unable to know what song is playing. Try to modify the metadata of your downloaded songs with VLC or any other tool.</p>
+<h3 id="filenotfounderror-could-not-find-module-libvlcdll"><code>FileNotFoundError: Could not find module 'libvlc.dll'.</code></h3>
+<p>Make sure that both Python and VLC are either 32 bits, or 64 bits, but not different. You should have a directory called <code>C:\Program Files (x86)\VideoLAN\VLC</code> (32b), or <code>C:\Program Files\VideoLAN\VLC</code> (64b).</p>
+<hr>
+<h2 id="development">Development</h2>
+<p>Helpful documentation links for contributing:</p>
+<ul>
+<li><a href="https://dbus.freedesktop.org/doc/dbus-specification.html">DBus</a>, <a href="https://github.com/LEW21/pydbus">pydbus</a>, <a href="https://specifications.freedesktop.org/mpris-spec/latest/Player_Interface.html#Property:Position">MPRIS</a>, <a href="https://wiki.qt.io/Qt_for_Python">Qt for Python</a>.</li>
+<li><a href="https://www.olivieraubert.net/vlc/python-ctypes/doc/">python-vlc</a>, <a href="https://github.com/jaseg/python-mpv">python-mpv</a>.</li>
+</ul>
+<p>The app logo was created by <a href="https://github.com/xypnox">xypnox</a> in this <a href="https://github.com/vidify/vidify/issues/26">issue</a>.</p>
+<p>The changelog and more information about this program&rsquo;s versions can be found in the <a href="https://github.com/vidify/vidify/releases">Releases page</a>.</p>
+<h3 id="external-player-implementations">External player implementations</h3>
+<p>The Vidify external player has an open protocol for anyone to implement their own app or program to play the videos. You can read more about how it works in this <a href="https://github.com/vidify/vidify/wiki/%5BDEV%5D-External-Player-Protocol">wiki article</a>.</p>
+<h3 id="tests">Tests</h3>
+<p>You can run the module locally with <code>python -m vidify</code>.</p>
+<p>This project uses <code>unittest</code> for testing. Run them with <code>python -m unittest</code>. You&rsquo;ll need all the extra dependencies installed for this to work.</p>
 
-            
-            <div class="col-12 text-center">
-                
-
-
-            </div>
-        </div>
     </div>
 </section>
-<!-- Blog Section End -->
+<!-- Wiki Section End -->
 
 
         </div>
