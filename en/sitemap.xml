@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vidify.org/posts/</loc>
+    <lastmod>2020-04-02T01:49:12+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/</loc>
+    <lastmod>2020-04-02T01:49:12+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/posts/launch/</loc>
+    <lastmod>2020-04-02T01:49:12+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vidify.org/about/</loc>
   </url>
   
@@ -40,20 +65,6 @@
   
   <url>
     <loc>https://vidify.org/blog/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vidify.org/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/"
-                />
   </url>
   
 </urlset>
