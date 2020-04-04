@@ -28,10 +28,6 @@
   </url>
   
   <url>
-    <loc>https://vidify.org/about/</loc>
-  </url>
-  
-  <url>
     <loc>https://vidify.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -65,6 +61,10 @@
   
   <url>
     <loc>https://vidify.org/blog/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/wiki/</loc>
   </url>
   
 </urlset>

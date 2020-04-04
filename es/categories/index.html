@@ -32,14 +32,14 @@
 <body id="body"><!-- Fixed Navigation -->
 
 
-<section class="header navigation">
+<section class="header navigation top-bar animated-header">
 
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-md">
                     <a class="navbar-brand" href="https://vidify.org/">
-                        <img src="https://vidify.org/images/logo.svg" alt="Vidify" width="175px">
+                        <img src="https://vidify.org/images/logo.png" alt="Vidify" width="150px">
                     </a>
                     
                     <div id="drapeaux">
@@ -80,19 +80,19 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/es/about">About</a>
+                                <a class="nav-link" href="https://vidify.org/es/wiki/gettingstarted/">Getting Started</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/es/service">Service</a>
+                                <a class="nav-link" href="https://vidify.org/es/">Download</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/es/portfolio">Portfolio</a>
+                                <a class="nav-link" href="https://vidify.org/es/wiki">Wiki</a>
                             </li>
                             
                             
@@ -185,7 +185,7 @@
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/es/about">Partners</a>
+                            <a href="https://vidify.org/es/about">Socios</a>
                         </li>
                         
                         <li>
@@ -197,7 +197,7 @@
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/es/about">Badges</a>
+                            <a href="https://vidify.org/es/about">Méritos</a>
                         </li>
                         
                     </ul>
@@ -218,7 +218,7 @@
         <h5>Copyright 2018. All rights reserved.</h5>
         <h6>Design and Developed by themefisher.com
             <br>Get More
-            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
+            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" rel="noreferrer">Free Bootstrap Templates</a>
         </h6>
     </div>
 </footer>
@@ -244,7 +244,10 @@
 <script src="https://vidify.org/plugins/filterzr/jquery.filterizr.min.js"></script>
 
 <!-- Smooth Scroll js -->
-<script src="https://vidify.org/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 
 <!-- fancybox -->
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
