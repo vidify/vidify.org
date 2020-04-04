@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The latest updates on Vidify</title>
-    <link>http://vidify.org/blog/</link>
+    <link>https://vidify.org/blog/</link>
     <description>Recent content in The latest updates on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

@@ -3,56 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://vidify.org/about/</loc>
+    <loc>https://vidify.org/about/</loc>
   </url>
   
   <url>
-    <loc>http://vidify.org/categories/</loc>
+    <loc>https://vidify.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://vidify.org/es/categories/"
+                href="https://vidify.org/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://vidify.org/categories/"
+                href="https://vidify.org/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://vidify.org/contact/</loc>
+    <loc>https://vidify.org/contact/</loc>
   </url>
   
   <url>
-    <loc>http://vidify.org/tags/</loc>
+    <loc>https://vidify.org/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://vidify.org/es/tags/"
+                href="https://vidify.org/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://vidify.org/tags/"
+                href="https://vidify.org/tags/"
                 />
   </url>
   
   <url>
-    <loc>http://vidify.org/blog/</loc>
+    <loc>https://vidify.org/blog/</loc>
   </url>
   
   <url>
-    <loc>http://vidify.org/</loc>
+    <loc>https://vidify.org/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://vidify.org/es/"
+                href="https://vidify.org/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://vidify.org/"
+                href="https://vidify.org/"
                 />
   </url>
   
