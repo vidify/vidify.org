@@ -119,6 +119,10 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 
+                <a href="https://vidify.org/wiki">
+                    <i class="tf-ion-android-arrow-back"></i>
+                    <span>GO BACK</span>
+                </a>
                 <h2>The Audiosync extension</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
@@ -135,14 +139,14 @@
                         </li>
                     </ul>
                 </div>
-                <p>You&rsquo;ll realize that some videos aren&rsquo;t exactly in sync. That&rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&hellip; Although this is very complicated to fix, Vidify has an audio synchronization extension.</p>
+                <p>You&rsquo;ll realize that some videos aren&rsquo;t exactly in sync. That&rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.</p>
 <p>The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress.</p>
-<p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
+<p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player because it&rsquo;s more precise. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
 <ul>
 <li>FFTW: <code>libfftw3</code> on Debian-based distros.</li>
 <li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your path.</li>
-<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos.</li>
-<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your path.</li>
+<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos, and <code>libpulse-dev</code>.</li>
+<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your <a href="https://superuser.com/q/284342">path</a>.</li>
 </ul>
 <p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the vidify snap.</p>
 <p>It can be activated with <code>--audiosync</code>, or inside your <a href="#the-config-file">config file</a>:</p>
@@ -166,22 +170,22 @@
             <div class="row">
                 <div class="col-sm-3 col-md-3 col-lg-3">
                     <h3>About</h3>
-                    <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
+                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Service</h3>
+                    <h3>GitHub</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/service">Graphic Design</a>
+                            <a href="https://github.com/vidify/vidify">Vidify</a>
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/service">Web Design</a>
+                            <a href="https://github.com/vidify/audiosync">Audiosync</a>
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/service">Web Development</a>
+                            <a href="https://github.com/vidify/vidify.org">vidify.org</a>
                         </li>
                         
                     </ul>
@@ -191,19 +195,11 @@
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/about">Partners</a>
+                            <a href="https://vidify.org/wiki/">Getting Started</a>
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/about"></a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://vidify.org/about">FAQ&#39;s</a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://vidify.org/about">Badges</a>
+                            <a href="https://vidify.org/wiki/faq/">FAQ&#39;s</a>
                         </li>
                         
                     </ul>

@@ -57,9 +57,9 @@ Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really lim
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/wiki/audiosync-extension/</guid>
-      <description>You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; Although this is very complicated to fix, Vidify has an audio synchronization extension.
+      <description>You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.
 The full repository is in vidify/audiosync. It&amp;rsquo;s still Work-In-Progress.
-Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommended to use Mpv as the video player. You can install it with pip install vidify[audiosync], along with the following dependencies:</description>
+Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommended to use Mpv as the video player because it&amp;rsquo;s more precise.</description>
     </item>
     
     <item>
