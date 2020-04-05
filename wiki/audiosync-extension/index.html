@@ -2,11 +2,11 @@
 <html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Play music videos in real time anywhere">
+<meta name="description" content="What&#39;s it for and how to use it">
 
 <meta name="generator" content="Hugo 0.68.3" />
 
-<title>404 Page not found</title>
+<title>The Audiosync extension</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,18 +114,48 @@
 </section>
 <div id="content">
 
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <h2>The Audiosync extension</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        
+                        <p>What&#39;s it for and how to use it</p>
+                        
+                        <li class="list-inline-item">
+                            
+                            <span>By Mario Ortiz Manero</span>
+                            
+                            
+                            <span>at April 5, 2020</span>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <p>You&rsquo;ll realize that some videos aren&rsquo;t exactly in sync. That&rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&hellip; Although this is very complicated to fix, Vidify has an audio synchronization extension.</p>
+<p>The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress.</p>
+<p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
+<ul>
+<li>FFTW: <code>libfftw3</code> on Debian-based distros.</li>
+<li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your path.</li>
+<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos.</li>
+<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your path.</li>
+</ul>
+<p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the vidify snap.</p>
+<p>It can be activated with <code>--audiosync</code>, or inside your <a href="#the-config-file">config file</a>:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
+<span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
+<p><em>Note: if when using audiosync there&rsquo;s no sound, you might need to disable stream target device restore by editing the corresponing line in <code>/etc/pulse/default.pa</code> to <code>load-module module-stream-restore restore_device=false</code>.</em></p>
+<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing. Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
+<p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
 
-<section class="page-404 text-center d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <p>Sorry, but the page you were trying to view does not exist.</p>
-        <a href="https://vidify.org/" class="btn btn-main mt-20">Go Home</a>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
         </div>

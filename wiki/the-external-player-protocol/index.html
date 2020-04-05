@@ -2,11 +2,11 @@
 <html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Play music videos in real time anywhere">
+<meta name="description" content="A developer guide on how the external player protocol works">
 
 <meta name="generator" content="Hugo 0.68.3" />
 
-<title>404 Page not found</title>
+<title>The external player protocol</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -114,18 +114,63 @@
 </section>
 <div id="content">
 
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <h2>The external player protocol</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        
+                        <p>A developer guide on how the external player protocol works</p>
+                        
+                        <li class="list-inline-item">
+                            
+                            <span>By Mario Ortiz Manero</span>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <p>The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&rsquo;s a more detailed description of how to do so:</p>
+<h2 id="establishing-the-connection">Establishing the connection</h2>
+<p>To connect the devices, a <a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD">DNS-based Service Discovery (DNS-SD)</a> mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</p>
+<p>This protocol requires defining a service name and a service type. They will always be <code>vidify - xxxx</code>, and <code>_vidify._tcp.</code>, respectively. The service name can include a brief description about the device (<code>xxxx</code>), but must always have an identifiable keyword (<code>vidify</code>).</p>
+<p>The DNS-SD registration will also include the following details about the Vidify server in its metadata:</p>
+<pre><code>id: &quot;vidify&quot;
+version: &quot;X.Y.Z&quot;
+os: &quot;LINUX&quot;, &quot;WINDOWS&quot;, &quot;MACOS&quot; or &quot;BSD&quot;
+api: &quot;MPRIS_LINUX&quot;, &quot;SPOTIFY_WEB&quot;...
+</code></pre><p>The provided version name should be checked inside the implementation in order to make sure that the connection is compatible. For example, Vidify 2.3.0 may not be compatible with your latest implementation version, so you shouldn&rsquo;t try to connect to it in the first place.</p>
+<p>The Vidify server is able to handle multiple connections at once, so you should take that in mind when developing your implementation.</p>
+<p>The protocol communication is based on JSON messages with UTF-8 encoding.</p>
+<h2 id="connection-acknowledgement">Connection acknowledgement</h2>
+<p>To establish a connection between a Vidify server and an app, there must first take place a confirmation. The app will send its own ID, along with some additional data, in order to make sure that both are compatible. This is currently not used inside Vidify&rsquo;s external player, but it&rsquo;s still required for future features.</p>
+<p>These are the defined fields for the initial message:</p>
+<pre><code>{
+    'id': 'com.glowapps.vidify',
+    'version': '0.3.2'  # optional
+}
+</code></pre><p>The ID, should be unique to avoid collisions with other implementations. The server will reply with the following structure:</p>
+<pre><code>{
+    'success': false,
+    'error_msg': 'The version 0.2.3 is incompatible ...'  # optional
+}
+</code></pre><h2 id="communication">Communication</h2>
+<p>Once the connection has been established successfully, the client doesn&rsquo;t need to send any other messages. The Vidify server will notify all its connected clients of updates in the music video metadata with these fields:</p>
+<pre><code>{
+    'url': 'https://youtube.com/...',
+    'relative_pos': -1200,  # optional
+    'absolute_pos': 4000,  # optional
+    'is_playing': true  # optional
+}
+</code></pre><p><code>url</code> is a mandatory field that indicates in respect to what video the update is being sent. The client will compare it to the currently playing video. If it&rsquo;s the same, it will just update its metadata. Otherwise, a new video will start playing with the indicated properties.</p>
+<p>The position field can be indicated as relative or absolute to the current status to the video. If both are provided, the absolute position has priority over the relative.</p>
 
-<section class="page-404 text-center d-flex align-items-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <p>Sorry, but the page you were trying to view does not exist.</p>
-        <a href="https://vidify.org/" class="btn btn-main mt-20">Go Home</a>
-      </div>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
         </div>
