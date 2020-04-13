@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vidify.org/es/categories/</loc>
+    <loc>https://vidify.org/nl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -11,18 +11,18 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/categories/"
+                hreflang="es"
+                href="https://vidify.org/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/categories/"
+                hreflang="nl"
+                href="https://vidify.org/nl/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://vidify.org/es/tags/</loc>
+    <loc>https://vidify.org/nl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -30,18 +30,18 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/tags/"
+                hreflang="es"
+                href="https://vidify.org/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/tags/"
+                hreflang="nl"
+                href="https://vidify.org/nl/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://vidify.org/es/</loc>
+    <loc>https://vidify.org/nl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -49,13 +49,13 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/"
+                hreflang="es"
+                href="https://vidify.org/es/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/"
+                hreflang="nl"
+                href="https://vidify.org/nl/"
                 />
   </url>
   
