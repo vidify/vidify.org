@@ -164,21 +164,21 @@
                     </ul>
                 </div>
                 <p>You&rsquo;ll realize that some videos aren&rsquo;t exactly in sync. That&rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.</p>
-<p>The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress.</p>
+<p>The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress, so it might be harder to use.</p>
 <p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player because it&rsquo;s more precise. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
 <ul>
 <li>FFTW: <code>libfftw3</code> on Debian-based distros.</li>
-<li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your path.</li>
-<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos, and <code>libpulse-dev</code>.</li>
-<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your <a href="https://superuser.com/q/284342">path</a>.</li>
+<li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your <a href="https://superuser.com/q/284342">PATH</a>..</li>
+<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most distros, and <code>libpulse-dev</code>.</li>
+<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your PATH.</li>
 </ul>
-<p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the vidify snap.</p>
-<p>It can be activated with <code>--audiosync</code>, or inside your <a href="#the-config-file">config file</a>:</p>
+<p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the binaries.</p>
+<p>It can be activated with <code>--audiosync</code>, or inside your <a href="https://github.com/vidify/vidify#the-config-file">config file</a>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
 <span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
 </code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
 <p><em>Note: if when using audiosync there&rsquo;s no sound, you might need to disable stream target device restore by editing the corresponing line in <code>/etc/pulse/default.pa</code> to <code>load-module module-stream-restore restore_device=false</code>.</em></p>
-<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing. Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
+<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing (your headphones or speaker). Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
 <p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
 
             </div>

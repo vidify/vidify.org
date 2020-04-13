@@ -27,8 +27,8 @@ Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;r
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/wiki/linux-media-players/</guid>
-      <description>This is the default API used currently in the app. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
-  PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python-gobject or pygobject).</description>
+      <description>This is the most recommended API for Linux users. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
+  PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python3-gobject or pygobject).</description>
     </item>
     
     <item>
@@ -37,8 +37,8 @@ Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;r
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/wiki/spotify-for-windows-and-macos/</guid>
-      <description>This is the default API for Windows and Mac OS users. The API uses the SwSpotify library to obtain information from the desktop Spotify apps for both Windows and Mac OS. You don&amp;rsquo;t have to install any dependencies, since it&amp;rsquo;s already installed by default on these platforms.
-Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information.</description>
+      <description>This is the default API for Windows and Mac OS users. You don&amp;rsquo;t have to install anything, since it&amp;rsquo;s already installed by default on these platforms.
+Current limitations  The library used to access information from the Spotify API is unable to obtain its position. Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information.  </description>
     </item>
     
     <item>
@@ -58,8 +58,8 @@ Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really lim
       
       <guid>https://vidify.org/wiki/audiosync-extension/</guid>
       <description>You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.
-The full repository is in vidify/audiosync. It&amp;rsquo;s still Work-In-Progress.
-Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommended to use Mpv as the video player because it&amp;rsquo;s more precise.</description>
+The full repository is in vidify/audiosync. It&amp;rsquo;s still Work-In-Progress, so it might be harder to use.
+Audiosync is only available on Linux for now.</description>
     </item>
     
     <item>
@@ -71,16 +71,6 @@ Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommende
       <description>I&amp;rsquo;m officially releasing Vidify&amp;rsquo;s website!
 This site is intended for non-developers, I&amp;rsquo;ll migrate part of the GitHub documentation here on how to use Vidify. The wiki is also better managed in here because multiple languages can be used easily, and anyone can still contribute by making a PR to vidify/vidify.org-source, which is better than wiki contributions.
 I still have to polish it a lot, but it&amp;rsquo;s ready to be public already.</description>
-    </item>
-    
-    <item>
-      <title>The external player protocol</title>
-      <link>https://vidify.org/wiki/the-external-player-protocol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vidify.org/wiki/the-external-player-protocol/</guid>
-      <description>The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&amp;rsquo;s a more detailed description of how to do so:
-Establishing the connection To connect the devices, a DNS-based Service Discovery (DNS-SD) mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</description>
     </item>
     
   </channel>

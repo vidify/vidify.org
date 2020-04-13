@@ -83,6 +83,26 @@
   </url>
   
   <url>
+    <loc>https://vidify.org/es/wiki/audiosync-extension/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/audiosync-extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/audiosync-extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/audiosync-extension/"
+                />
+  </url>
+  
+  <url>
     <loc>https://vidify.org/es/wiki/linux-media-players/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -139,26 +159,6 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://vidify.org/es/wiki/spotify-web-api/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vidify.org/es/wiki/audiosync-extension/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/wiki/audiosync-extension/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/wiki/audiosync-extension/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/wiki/audiosync-extension/"
                 />
   </url>
   
@@ -241,11 +241,6 @@
   
   <url>
     <loc>https://vidify.org/es/wiki/the-external-player-protocol/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/wiki/the-external-player-protocol/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"

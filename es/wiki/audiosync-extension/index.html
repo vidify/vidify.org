@@ -6,7 +6,7 @@
 
 <meta name="generator" content="Hugo 0.68.3" />
 
-<title>The Audiosync extension</title>
+<title>La extensión Audiosync</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,11 +143,11 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 
-                <a href="https://vidify.org/wiki">
+                <a href="https://vidify.org/es/wiki">
                     <i class="tf-ion-android-arrow-back"></i>
                     <span>GO BACK</span>
                 </a>
-                <h2>The Audiosync extension</h2>
+                <h2>La extensión Audiosync</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         
@@ -163,22 +163,23 @@
                         </li>
                     </ul>
                 </div>
-                <p>You&rsquo;ll realize that some videos aren&rsquo;t exactly in sync. That&rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.</p>
-<p>The full repository is in <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. It&rsquo;s still Work-In-Progress.</p>
-<p>Audiosync is only available on Linux for now. It&rsquo;s strongly recommended to use Mpv as the video player because it&rsquo;s more precise. You can install it with <code>pip install vidify[audiosync]</code>, along with the following dependencies:</p>
+                <p>Te darás cuenta de que algunos vídeos no están exactamente sincronizados. Esto es porque los videoclips son reproducidos desde YouTube, y suelen ser diferentes versiones de la canción, tienen intros y outros&hellip; que arruinan la sincronización. A pesar de que esto es muy complicado de arreglar, Vidify tiene una extensión de sincronización de audio que lo intenta.</p>
+<p>El repositorio completo está en <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. Está en desarrollo aún, por lo que puede que sea más complicado de usar.</p>
+<p>Audiosync sólo está disponible en Linux por ahora. Se recomienda usar Mpv cono el reproductor de vídeo porque es más preciso. Puedes instalarlo con <code>pip install vidify[audiosync]</code>, junto a las siguientes dependencias:</p>
 <ul>
-<li>FFTW: <code>libfftw3</code> on Debian-based distros.</li>
-<li>ffmpeg: <code>ffmpeg</code> on most repositories. It must be available on your path.</li>
-<li>pulseaudio: <code>pulseaudio</code>, pre-installed on most repos, and <code>libpulse-dev</code>.</li>
-<li>youtube-dl: this is installed by default with Vidify, but make sure it&rsquo;s available on your <a href="https://superuser.com/q/284342">path</a>.</li>
+<li>FFTW: <code>libfftw3</code> en distros basados en Debian.</li>
+<li>ffmpeg: <code>ffmpeg</code> en la mayoría de repositorios debe estar disponible en tu <a href="https://maslinux.es/como-establecer-la-variable-path-en-linux/">PATH</a>.</li>
+<li>pulseaudio: <code>pulseaudio</code>, pre-instalado en la mayoría de distros, junto a <code>libpulse-dev</code>.</li>
+<li>youtube-dl: está instalado por defecto con Vidify, pero segúrate de que está disponible en tu PATH.</li>
 </ul>
-<p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the vidify snap.</p>
-<p>It can be activated with <code>--audiosync</code>, or inside your <a href="#the-config-file">config file</a>:</p>
+<p>También está disponible como <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> en el AUR, y viene pre-instalado en los binarios.</p>
+<p>Puedes activarlo con <code>--audiosync</code>, o dentro de tu <a href="https://github.com/vidify/vidify#the-config-file">config</a>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
 <span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
-</code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
-<p><em>Note: if when using audiosync there&rsquo;s no sound, you might need to disable stream target device restore by editing the corresponing line in <code>/etc/pulse/default.pa</code> to <code>load-module module-stream-restore restore_device=false</code>.</em></p>
-<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing. Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
+</code></pre></div><p>Puedes calibrar los resultados de audiosync con la opción <code>--audiosync-calibration</code>. Por defecto, es 0 milisegundos, pero puede que dependa de tu hardware.</p>
+<p><em>Nota: si cuando usas audiosync no hay sonido, es posible que necesites desactivar &ldquo;stream target device restore&rdquo; editando la correspondiente línea en <code>/etc/pulse/default.pa</code> a <code>load-module module-stream-restore restore_device=false</code>.</em></p>
+<p><em>Nota 2:
+deberías asegurarte de que el dispositivo que está siendo grabado es <code>audiosync</code>, o donde la música se está reproduciendo (tus cascos o altavoces). Aquí hay un ejemplo en Pavucontrol (se suele llamar &lsquo;Monitor de &hellip;'):</em></p>
 <p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
 
             </div>

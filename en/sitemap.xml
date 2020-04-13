@@ -239,23 +239,4 @@
                 />
   </url>
   
-  <url>
-    <loc>https://vidify.org/wiki/the-external-player-protocol/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/wiki/the-external-player-protocol/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/wiki/the-external-player-protocol/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/wiki/the-external-player-protocol/"
-                />
-  </url>
-  
 </urlset>
