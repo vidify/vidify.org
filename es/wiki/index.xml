@@ -61,15 +61,5 @@ Limitaciones actuales  La librería usada para acceder a los datos de Spotify no
  You have to sign in and set it up manually (only once though) Only Spotify Premium users are able to use some functions API calls are limited More internet usage is needed to continuously communicate with Spotify  The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time.</description>
     </item>
     
-    <item>
-      <title>The external player protocol</title>
-      <link>https://vidify.org/es/wiki/the-external-player-protocol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vidify.org/es/wiki/the-external-player-protocol/</guid>
-      <description>The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&amp;rsquo;s a more detailed description of how to do so:
-Establishing the connection To connect the devices, a DNS-based Service Discovery (DNS-SD) mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</description>
-    </item>
-    
   </channel>
 </rss>
