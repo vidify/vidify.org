@@ -94,13 +94,15 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
+                                    
                                     Language
+                                    
                                 </a>
                                 <div class="dropdown-menu">
                                     
                                         
 
-    <a href="https://vidify.org/en" class="selected dropdown-item">
+    <a href="https://vidify.org/en" class="dropdown-item selected">
     
 <span class="lang-code">en</span>
 <span class="lang-name">English</span>
@@ -159,7 +161,7 @@
 <section class="blog section" id="wiki">
     <div class="container">
         <h1 id="getting-started">Getting Started</h1>
-<p>To use Vidify, you&rsquo;re always going to need the desktop app installed on the computer where the music is playing. The easiest way to install it is by downloading the binaries. The app is only optional, since it connects to Vidify through the network.</p>
+<p>To use Vidify, you&rsquo;re always going to need the desktop app installed on the computer where the music is playing. The easiest way to install it is by downloading the binaries. You can reproduce the music videos from there, butif you want to do it on a TV or phone, you&rsquo;ll need the app for Android installed, which is connected to Vidify through the network.</p>
 <p>Vidify currently supports Spotify on Windows and Mac OS, and <span class="tooltip-text-custom" data-toggle="tooltip" title="all MPRIS compatible">almost all</span>
  music players on Linux.</p>
 
@@ -196,13 +198,12 @@
 
 
 
-<p>If you&rsquo;re more tech savvy, it&rsquo;s better to download Vidify from <a href="https://pypi.org/project/vidify">PyPi</a> with <code>pip install vidify</code>, and Linux users can use other native alternatives:</p>
+<p>If you&rsquo;re more tech savvy, it&rsquo;s better to download Vidify from <a href="https://pypi.org/project/vidify">PyPi</a>. Linux users can use other more native alternatives:</p>
 <ul>
-<li>Any distro: <a href="https://snapcraft.io/vidify-qt">snapcraft</a>.</li>
 <li>Arch Linux: <a href="https://aur.archlinux.org/packages/vidify/">AUR</a>.</li>
 <li>Gentoo Linux: <a href="https://gpo.zugaina.org/media-video/vidify">GURU media-video/vidify</a>.</li>
 </ul>
-<p>More details about advanced intallations can be found on <a href="https://github.com/vidify/vidify#installation">GitHub</a> (the README contains detailed information for more advanced users).</p>
+<p>More details about advanced intallations can be found on <a href="https://github.com/vidify/vidify#installation">GitHub</a> (the README contains detailed information for more experienced users).</p>
 <h3 id="the-apis">The APIs</h3>
 <p>An API is simply a source of information about the music playing on a device. For example, the Spotify desktop client, or iTunes. Here are the currently supported ones:</p>
 <table>
@@ -220,14 +221,14 @@
 <td>Any MPRIS compatible media player for Linux or BSD (99% of them, like Spotify, Clementine, VLC&hellip;).</td>
 </tr>
 <tr>
-<td><a href="/spotify-for-windows-and-macos">Spotify for Windows &amp; MacOS</a></td>
+<td><a href="/wiki/spotify-for-windows-and-macos">Spotify for Windows &amp; MacOS</a></td>
 <td><em>Installed by default</em></td>
-<td>The Spotify desktop app for Windows &amp; MacOS, using the <a href="https://github.com/SwagLyrics/SwSpotify">SwSpotify</a> library.</td>
+<td>The Spotify desktop app for Windows &amp; MacOS.</td>
 </tr>
 <tr>
 <td><a href="/wiki/spotify-web-api">Spotify Web</a></td>
 <td><em>Installed by default</em></td>
-<td>The official Spotify Web API, using <a href="https://github.com/felix-hilden/tekore">Tekore</a>. Check the wiki for more details on how to set it up.</td>
+<td>The official Spotify Web API. Check its wiki article for more details on how to set it up.</td>
 </tr>
 </tbody>
 </table>
@@ -272,29 +273,29 @@
     <div class="top-footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>About</h3>
                     <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>GitHub</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://github.com/vidify/vidify">Vidify</a>
+                            <a href="https://github.com/vidify/vidify" target="_blank" rel="noreferrer">Vidify</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/vidify/audiosync">Audiosync</a>
+                            <a href="https://github.com/vidify/audiosync" target="_blank" rel="noreferrer">Audiosync</a>
                         </li>
                         
                         <li>
-                            <a href="https://github.com/vidify/vidify.org">vidify.org</a>
+                            <a href="https://github.com/vidify/vidify.org" target="_blank" rel="noreferrer">vidify.org</a>
                         </li>
                         
                     </ul>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>Quicklinks</h3>
                     <ul>
                         
@@ -307,15 +308,6 @@
                         </li>
                         
                     </ul>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>Subscribe</h3>
-                    <form class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
-                    </form>
                 </div>
             </div>
         </div>
@@ -347,9 +339,6 @@
         });
     });
 </script>
-
-<!-- Parallax -->
-<script src="https://vidify.org/plugins/parallax/jquery.parallax-1.1.3.js"></script>
 
 <!-- Slick Carousel -->
 <script src="https://vidify.org/plugins/slick-carousel/slick/slick.min.js"></script>

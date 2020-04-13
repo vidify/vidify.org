@@ -3,6 +3,186 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vidify.org/es/blog/launch/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/blog/launch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/blog/launch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/blog/launch/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/blog/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/faq/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/faq/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/linux-media-players/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/linux-media-players/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/linux-media-players/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/linux-media-players/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/spotify-for-windows-and-macos/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/spotify-for-windows-and-macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/spotify-for-windows-and-macos/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/spotify-web-api/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/spotify-web-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/spotify-web-api/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/spotify-web-api/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/audiosync-extension/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/audiosync-extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/audiosync-extension/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/audiosync-extension/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/wiki/</loc>
+    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/wiki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/wiki/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/wiki/"
+                />
+  </url>
+  
+  <url>
     <loc>https://vidify.org/es/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -18,6 +198,25 @@
                 rel="alternate"
                 hreflang="es"
                 href="https://vidify.org/es/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/es/contact/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/contact/"
                 />
   </url>
   
@@ -41,21 +240,21 @@
   </url>
   
   <url>
-    <loc>https://vidify.org/es/</loc>
+    <loc>https://vidify.org/es/wiki/the-external-player-protocol/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://vidify.org/"
+                href="https://vidify.org/wiki/the-external-player-protocol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="nl"
-                href="https://vidify.org/nl/"
+                href="https://vidify.org/nl/wiki/the-external-player-protocol/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://vidify.org/es/"
+                href="https://vidify.org/es/wiki/the-external-player-protocol/"
                 />
   </url>
   

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Las últimas novedades on Vidify</title>
+    <link>https://vidify.org/es/blog/</link>
+    <description>Recent content in Las últimas novedades on Vidify</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vidify.org/es/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Lanzamiento de la página web</title>
+      <link>https://vidify.org/es/blog/launch/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/blog/launch/</guid>
+      <description>¡Oficialmente anuncio el lanzamiento de la página web de Vidify!
+Esta página web está destinada a los no desarrolladores de software. Migraré parte de la documentación de GitHub aquí sobre cómo usar Vidify. La wiki es más fácil de administrar porque se pueden usar múltiples lenguajes fácilmente, y cualquiera puede seguir contribuyendo haciendo un Pull Request a vidify/vidify.org-source, que es mejor que las contribuciones de wikis.
+Aún tengo que pulirla un montón, y estoy terminando aún la traducción a español, pero está lista para ser pública.</description>
+    </item>
+    
+  </channel>
+</rss>

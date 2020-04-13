@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="nl-nl"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="A developer guide on how the external player protocol works">
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+<title>The external player protocol</title>
+
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="https://vidify.org/images/favicon.ico" />
+
+<!-- Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162662877-1');
+</script>
+
+<!-- Stylesheets -->
+<!-- Themefisher Icon font -->
+<link rel="stylesheet" href="https://vidify.org/plugins/themefisher-font/style.css">
+<!-- bootstrap.min css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- fancybox.min css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://vidify.org/plugins/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="https://vidify.org/plugins/slick-carousel/slick/slick-theme.css">
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="https://vidify.org/css/style.min.css" media="screen">
+
+</head>
+<body id="body"><!-- Fixed Navigation -->
+<section class="header navigation top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="https://vidify.org/nl/">
+                        <img src="https://vidify.org/images/logo.png" alt="Vidify" width="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="tf-ion-android-menu"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://vidify.org/"></a>
+                            </li>
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/nl/" >Home</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/nl/wiki" >Wiki</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/nl/blog" >Blog</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/vidify" target='_blank' rel="noreferrer">GitHub</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/nl/contact" >Contact</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    
+                                    Language
+                                    
+                                </a>
+                                <div class="dropdown-menu">
+                                    
+                                        
+
+    <a href="https://vidify.org/en" class="dropdown-item">
+
+<span class="lang-code">en</span>
+<span class="lang-name">English</span>
+</a>
+
+                                    
+                                        
+
+    <a href="https://vidify.org/es" class="dropdown-item">
+
+<span class="lang-code">es</span>
+<span class="lang-name">Español</span>
+</a>
+
+                                    
+                                        
+
+    <a href="https://vidify.org/nl" class="dropdown-item selected">
+    
+<span class="lang-code">nl</span>
+<span class="lang-name">Nederlands</span>
+</a>
+
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="content">
+
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <a href="https://vidify.org/wiki">
+                    <i class="tf-ion-android-arrow-back"></i>
+                    <span>GO BACK</span>
+                </a>
+                <h2>The external player protocol</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        
+                        <p>A developer guide on how the external player protocol works</p>
+                        
+                        <li class="list-inline-item">
+                            
+                            <span>By Mario Ortiz Manero</span>
+                            
+                            
+                        </li>
+                    </ul>
+                </div>
+                <p>De externe media speler definieert een publiek model om te volgen bij het communiceren met andere apparaten. Op deze manier kan iedereen deze in hun app of programma implementeren om de video daar af te spelen. Hier is een gedetailleerde beschrijving over hoe je dat doet:</p>
+<h2 id="initialiseren-van-de-verbinding">Initialiseren van de verbinding</h2>
+<p>Om met apparaten te verbinden wordt gebruik gemaakt van een <a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD">DNS-based Service Discovery (DNS-SD)</a>. De Vidify server registreert zichzelf op het netwerk, en iedereen daarin kan daarmee verbinden.</p>
+<p>Dit protocol vereist dat er een service naam en service type wordt gedefineert. Deze zullen altijd respectievelijk <code>vidify - xxxx</code>, en <code>_vidify._tcp.</code> zijn. De service naam kan een korte beschrijving bevatten (<code>xxxx</code>), maar moet altijd het identificatie zoekwoord (<code>vidify</code>) hebben.</p>
+<p>De DNS-SD registratie zal ook de volgende details bevatten over de Vidify server en de metadata daarvan:</p>
+<pre><code>id: &quot;vidify&quot;
+version: &quot;X.Y.Z&quot;
+os: &quot;LINUX&quot;, &quot;WINDOWS&quot;, &quot;MACOS&quot; or &quot;BSD&quot;
+api: &quot;MPRIS_LINUX&quot;, &quot;SPOTIFY_WEB&quot;...
+</code></pre><p>Het versie nummer dient gecontroleerd te worden in de implementatie om te verifiëren dat de verbinding compatibel is. Vidify 2.3.0 hoeft bijvoorbeeld helemaal niet compatibel te zijn met de recentste versie van jouw implementatie, probeer deze verbinding dan ook niet te initialiseren.</p>
+<p>De Vidify server kan meerder verbindingen tegelijk ondersteunen, let hierop wanneer je jouw implementatie ontwikkeld.</p>
+<p>Het communicatie protocol is gebaseerd op JSON berichten met UTF-8 codering.</p>
+<h2 id="verbinding-bevestiging">Verbinding bevestiging</h2>
+<p>Om een verbinding op te zetten tussen de Vidify server en de app, dient er eerst bevestiging plaats te vinden. De app stuurt zijn eigen ID en andere data, om ervoor te zorgen dat deze beiden compatibel zijn. Dit wordt op het moment niet gebruikt in Vidify, maar is wel vereist met het oog op toekomstige functies.</p>
+<p>Deze velden zijn gedefinieerd voor het eerste bericht:</p>
+<pre><code>{
+    'id': 'com.glowapps.vidify',
+    'version': '0.3.2'  # optional
+}
+</code></pre><p>Het ID dient uniek te zijn om conflicten te voorkomen met andere implementaties. De server antwoord als volgt:</p>
+<pre><code>{
+    'success': false,
+    'error_msg': 'The version 0.2.3 is incompatible ...'  # optional
+}
+</code></pre><h2 id="communicatie">Communicatie</h2>
+<p>Wanneer er succesvol verbinding is gemaakt hoeft de client geen verdere berichten te versturen. De Vidify server voorziet alle verbonden clients van updates in de metadata van de afspelende muziek in het volgende formaat:</p>
+<pre><code>{
+    'url': 'https://youtube.com/...',
+    'relative_pos': -1200,  # optional
+    'absolute_pos': 4000,  # optional
+    'is_playing': true  # optional
+}
+</code></pre><p><code>url</code> is een verplicht veld dat de representeert bij welke video de updates horen. De client vergelijkt deze met de video die op dit moment afspeelt. Is deze hetzelfde, dan wordt allen de metadata aangepast. Anders wordt er ook een nieuwe video gestart met de aangegeven eigenschappen.</p>
+<p>Het positie veld kan verwijzen naar een absolute of relatieve positie in de video. Als deze beide zijn gespecificeerd dan heeft het de absolute prioriteit over de relatieve positie.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+<!-- Footer Start -->
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>About</h3>
+                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>GitHub</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/vidify" target="_blank" rel="noreferrer">Vidify</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/audiosync" target="_blank" rel="noreferrer">Audiosync</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/vidify.org" target="_blank" rel="noreferrer">vidify.org</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>Quicklinks</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://vidify.org/nl/wiki/">Getting Started</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://vidify.org/nl/wiki/faq/">FAQ&#39;s</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <h5>Copyright 2018. All rights reserved.</h5>
+        <h6>Design and Developed by themefisher.com
+            <br>Get More
+            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" rel="noreferrer">Free Bootstrap Templates</a>
+        </h6>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+<!-- Essential Scripts -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+            placement: 'auto'
+        });
+    });
+</script>
+
+<!-- Slick Carousel -->
+<script src="https://vidify.org/plugins/slick-carousel/slick/slick.min.js"></script>
+
+<!-- Portfolio Filtering -->
+<script src="https://vidify.org/plugins/filterzr/jquery.filterizr.min.js"></script>
+
+<!-- Smooth Scroll js -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://vidify.org/js/script.min.js"></script>
+</body>
+</html>

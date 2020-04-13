@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on Vidify</title>
+    <link>https://vidify.org/es/wiki/</link>
+    <description>Recent content in Wiki on Vidify</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://vidify.org/es/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://vidify.org/es/wiki/faq/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/faq/</guid>
+      <description>My favorite music player isn&amp;rsquo;t supported by Vidify Vidify was created with this in mind. There are many different music players and we are working on supporting as many of them as possible. Please do let us know so that we know what players are more popular.
+Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;rsquo;t have a metadata field with its title and artist (the latter is optional), Vidify is unable to know what song is playing.</description>
+    </item>
+    
+    <item>
+      <title>Linux Media Players</title>
+      <link>https://vidify.org/es/wiki/linux-media-players/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/linux-media-players/</guid>
+      <description>This is the default API used currently in the app. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
+  PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python-gobject or pygobject).</description>
+    </item>
+    
+    <item>
+      <title>Spotify for Windows and Mac OS</title>
+      <link>https://vidify.org/es/wiki/spotify-for-windows-and-macos/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/spotify-for-windows-and-macos/</guid>
+      <description>This is the default API for Windows and Mac OS users. The API uses the SwSpotify library to obtain information from the desktop Spotify apps for both Windows and Mac OS. You don&amp;rsquo;t have to install any dependencies, since it&amp;rsquo;s already installed by default on these platforms.
+Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information.</description>
+    </item>
+    
+    <item>
+      <title>Spotify Web API</title>
+      <link>https://vidify.org/es/wiki/spotify-web-api/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/spotify-web-api/</guid>
+      <description>All the supported platforms have a way to obtain song data from the desktop Spotify app, but it may not be as reliable as the official web API, or may lack features in comparison to it. For example, with the Spotify Web API, you can control the music on other devices other than where Vidify is running. However, it also brings other downsides:
+ You have to sign in and set it up manually (only once though) Only Spotify Premium users are able to use some functions API calls are limited More internet usage is needed to continuously communicate with Spotify  The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time.</description>
+    </item>
+    
+    <item>
+      <title>The Audiosync extension</title>
+      <link>https://vidify.org/es/wiki/audiosync-extension/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/audiosync-extension/</guid>
+      <description>You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.
+The full repository is in vidify/audiosync. It&amp;rsquo;s still Work-In-Progress.
+Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommended to use Mpv as the video player because it&amp;rsquo;s more precise.</description>
+    </item>
+    
+    <item>
+      <title>The external player protocol</title>
+      <link>https://vidify.org/es/wiki/the-external-player-protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/wiki/the-external-player-protocol/</guid>
+      <description>The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&amp;rsquo;s a more detailed description of how to do so:
+Establishing the connection To connect the devices, a DNS-based Service Discovery (DNS-SD) mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</description>
+    </item>
+    
+  </channel>
+</rss>

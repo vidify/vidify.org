@@ -65,11 +65,11 @@ Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommende
     <item>
       <title>Website Launch</title>
       <link>https://vidify.org/blog/launch/</link>
-      <pubDate>Thu, 02 Apr 2020 01:49:12 +0200</pubDate>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/blog/launch/</guid>
       <description>I&amp;rsquo;m officially releasing Vidify&amp;rsquo;s website!
-This site is intended for non-developers, I&amp;rsquo;ll migrate part of the GitHub documentation here on how to use Vidify. The wiki is also better managed in here because multiple languages can be used easily, and people can still contribute by making a PR to vidify/vidify.org-source, which is better than wiki contributions.
+This site is intended for non-developers, I&amp;rsquo;ll migrate part of the GitHub documentation here on how to use Vidify. The wiki is also better managed in here because multiple languages can be used easily, and anyone can still contribute by making a PR to vidify/vidify.org-source, which is better than wiki contributions.
 I still have to polish it a lot, but it&amp;rsquo;s ready to be public already.</description>
     </item>
     

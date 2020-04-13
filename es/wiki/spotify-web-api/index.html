@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es-es"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="What the API means and how it works">
+
+<meta name="generator" content="Hugo 0.68.3" />
+
+<title>Spotify Web API</title>
+
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="https://vidify.org/images/favicon.ico" />
+
+<!-- Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-162662877-1');
+</script>
+
+<!-- Stylesheets -->
+<!-- Themefisher Icon font -->
+<link rel="stylesheet" href="https://vidify.org/plugins/themefisher-font/style.css">
+<!-- bootstrap.min css -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- fancybox.min css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<!-- Slick Carousel -->
+<link rel="stylesheet" href="https://vidify.org/plugins/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="https://vidify.org/plugins/slick-carousel/slick/slick-theme.css">
+<!-- Main Stylesheet -->
+
+<link rel="stylesheet" href="https://vidify.org/css/style.min.css" media="screen">
+
+</head>
+<body id="body"><!-- Fixed Navigation -->
+<section class="header navigation top-bar animated-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="https://vidify.org/es/">
+                        <img src="https://vidify.org/images/logo.png" alt="Vidify" width="150px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="tf-ion-android-menu"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://vidify.org/"></a>
+                            </li>
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/es/" >Inicio</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/es/wiki" >Wiki</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/es/blog" >Blog</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/vidify" target='_blank' rel="noreferrer">GitHub</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://vidify.org/es/contact" >Contacto</a>
+                            </li>
+                            
+                            
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    
+                                    Idioma
+                                    
+                                </a>
+                                <div class="dropdown-menu">
+                                    
+                                        
+
+    <a href="https://vidify.org/en" class="dropdown-item">
+
+<span class="lang-code">en</span>
+<span class="lang-name">English</span>
+</a>
+
+                                    
+                                        
+
+    <a href="https://vidify.org/es" class="dropdown-item selected">
+    
+<span class="lang-code">es</span>
+<span class="lang-name">Español</span>
+</a>
+
+                                    
+                                        
+
+    <a href="https://vidify.org/nl" class="dropdown-item">
+
+<span class="lang-code">nl</span>
+<span class="lang-name">Nederlands</span>
+</a>
+
+                                    
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="content">
+
+<section class="blog-single section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                
+                <a href="https://vidify.org/wiki">
+                    <i class="tf-ion-android-arrow-back"></i>
+                    <span>GO BACK</span>
+                </a>
+                <h2>Spotify Web API</h2>
+                <div class="post-meta mb-5">
+                    <ul class="list-inline">
+                        
+                        <p>What the API means and how it works</p>
+                        
+                        <li class="list-inline-item">
+                            
+                            <span>By Mario Ortiz Manero</span>
+                            
+                            
+                            <span>at 5 April 2020</span>
+                            
+                        </li>
+                    </ul>
+                </div>
+                <p>All the supported platforms have a way to obtain song data from the desktop Spotify app, but it may not be as reliable as the official web API, or may lack features in comparison to it. For example, with the Spotify Web API, you can control the music on other devices other than where Vidify is running. However, it also brings other downsides:</p>
+<ul>
+<li>You have to sign in and set it up manually (only once though)</li>
+<li>Only Spotify Premium users are able to use some functions</li>
+<li>API calls are limited</li>
+<li>More internet usage is needed to continuously communicate with Spotify</li>
+</ul>
+<p>The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time. After selecting the Spotify Web API, Vidify will ask you for your Client ID and Client secret. These are the keys Spotify uses to access your account&rsquo;s data from external sources (the currently playing song). Here&rsquo;s how to obtain them:</p>
+<h3 id="obtaining-your-client-id-and-client-secret">Obtaining your client ID and client secret:</h3>
+<ol>
+<li>Go to the <a href="https://developer.spotify.com/dashboard/applications">Spotify Developers Dashboard</a>.</li>
+<li>Create a new client ID. You can fill the descriptions as you like. Select <code>No</code> when asked if it&rsquo;s a commercial integration and accept the Terms and Conditions in the next step.</li>
+<li>Go to <code>Edit Settings</code> and copy-paste <code>http://localhost:8888/callback/</code> in the Redirect URIs field.</li>
+<li>You can now copy your Client ID and Client Secret and input them when you launch the app for the first time.</li>
+</ol>
+<p><em>The client secret is a private key, so do not upload or share it with anyone.</em></p>
+<h3 id="advanced-usage">Advanced usage</h3>
+<p>Everything input in the GUI will automatically be saved inside the config file. If you want to use a redirect uri other than the default one (<code>http://localhost:8888/callback/</code>), you&rsquo;ll have to specify it as an argument or in the config file. Here&rsquo;s a table with the related options available:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Config option</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--api spotify_web</code></td>
+<td><code>api = spotify_web</code> inside <code>[Defaults]</code></td>
+</tr>
+<tr>
+<td><code>--client-id &lt;CLIENT_ID&gt;</code></td>
+<td><code>client_id</code> inside <code>[SpotifyWeb]</code></td>
+</tr>
+<tr>
+<td><code>--client-secret &lt;CLIENT_SECRET&gt;</code></td>
+<td><code>client_secret</code> inside <code>[SpotifyWeb]</code></td>
+</tr>
+<tr>
+<td><code>--redirect-uri &lt;REDIRECT_URI&gt;</code></td>
+<td><code>redirect_uri</code> inside <code>[SpotifyWeb]</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="current-limitations">Current limitations</h3>
+<ul>
+<li>Spotify&rsquo;s Web API doesn&rsquo;t have an asynchronous event loop like <a href="https://github.com/vidify/vidify/wiki/Linux-Media-Players">DBus</a>, meaning that the track data has to be manually updated every second to detect new changes.</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+<!-- Footer Start -->
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>Sobre Nosotros</h3>
+                    <p>Vidify es un proyecto de código abierto en su núcleo. Cualquiera puede contribuir y mejorarlo en <a href="https://github.com/vidify">GitHub</a>. Está en desarrollo continuo, lanzando arreglos y nuevas funcionalidades frecuentemente. No olvides mantenerte actualizado.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>GitHub</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/vidify" target="_blank" rel="noreferrer">Vidify</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/audiosync" target="_blank" rel="noreferrer">Audiosync</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://github.com/vidify/vidify.org" target="_blank" rel="noreferrer">vidify.org</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 col-xs-12">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://vidify.org/es/wiki/">Introdución</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://vidify.org/es/wiki/faq/">FAQ&#39;s</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <h5>Copyright 2018. All rights reserved.</h5>
+        <h6>Design and Developed by themefisher.com
+            <br>Get More
+            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank" rel="noreferrer">Free Bootstrap Templates</a>
+        </h6>
+    </div>
+</footer>
+<!-- end footer -->
+
+
+<!-- Essential Scripts -->
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script>
+    
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip({
+            placement: 'auto'
+        });
+    });
+</script>
+
+<!-- Slick Carousel -->
+<script src="https://vidify.org/plugins/slick-carousel/slick/slick.min.js"></script>
+
+<!-- Portfolio Filtering -->
+<script src="https://vidify.org/plugins/filterzr/jquery.filterizr.min.js"></script>
+
+<!-- Smooth Scroll js -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
+
+<!-- fancybox -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!-- Main Script -->
+
+<script src="https://vidify.org/js/script.min.js"></script>
+</body>
+</html>
