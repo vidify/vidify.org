@@ -12,17 +12,27 @@
     
     
     <item>
+      <title>De Audiosync extensie</title>
+      <link>https://vidify.org/nl/wiki/audiosync-extension/</link>
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/nl/wiki/audiosync-extension/</guid>
+      <description>Je zal je realiseren dat sommige videos niet precies gesynchroniseerd zijn met de muziek. Dit is omdat de video&amp;rsquo;s worden afgespeeld van YouTube, en dit zijn vaak andere versies van hetzelfde nummer, met verschillende intro&amp;rsquo;s en uitro&amp;rsquo;s&amp;hellip; wat problemen oplevert met de timing. Dit is lastig om op te lossen, maar Vidify heeft desondanks een audio synchronisatie extensie die dit probeert.
+De gehele broncode is hier beschikbaar: vidify/audiosync. Het is nog niet volledig functioneel, en kan dus lastig in gebruik zijn.</description>
+    </item>
+    
+    <item>
       <title>FAQ</title>
       <link>https://vidify.org/nl/wiki/faq/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/nl/wiki/faq/</guid>
-      <description>Vidify werkt niet goed met Python 3.8 en PySide2 PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. TypeError: &#39;Shiboken.ObjectType&#39; object is not iterable is de foutmelding die je anders zult zien.
-ModuleNotFoundError: No module named &#39;gi&#39; when using a virtual environment python-gobject is niet altijd beschikbaar in een virtuele omgeving. Om hier omheen te werken kun je een symlink maken met:</description>
+      <description>Mijn favoriete muziekspeler is niet ondersteund door Vidify Er zijn vele verschillende muziekspelers, en we werken eraan om hier zoveel mogelijk van te ondersteunen. Laat dit ons weten, zodat we weten welke het meest populair zijn.
+Vidify werkt niet goed met Python 3.8 en PySide2 PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. TypeError: &#39;Shiboken.</description>
     </item>
     
     <item>
-      <title>Linux Media Players</title>
+      <title>Linux Mediaspelers</title>
       <link>https://vidify.org/nl/wiki/linux-media-players/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
@@ -32,13 +42,13 @@ ModuleNotFoundError: No module named &#39;gi&#39; when using a virtual environme
     </item>
     
     <item>
-      <title>Spotify for Windows and Mac OS</title>
+      <title>Spotify voor Windows en Mac OS</title>
       <link>https://vidify.org/nl/wiki/spotify-for-windows-and-macos/</link>
       <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/nl/wiki/spotify-for-windows-and-macos/</guid>
-      <description>Dit is de standaard API voor Windows en Mac OS gebruikers. Deze API gebruikt de SwSpotify library om informatie op te vragen van de desktop Spotify apps op Windows en Mac OS. Je hebt geen extra libraries nodig, omdat deze automatisch worden geïnstalleerd voor deze besturingssystemen.
-De app is niet getest op Mac OS, omdat de emulators hiervoor nogal gelimiteerd zijn. Mocht je problemen ondervinden, open dan een issue met gedetailleerde informatie over je probleem.</description>
+      <description>Dit is de standaard API voor Windows en Mac OS gebruikers. Je hebt geen extra libraries nodig, omdat deze automatisch worden geïnstalleerd voor deze besturingssystemen.
+Actuele limitaties  De gebruikte library SwSpotify om informatie op te vragen van de Spotify API, kan niet de positie hiervan bepalen. De app is niet getest op Mac OS, omdat de emulators hiervoor nogal gelimiteerd zijn. Mocht je problemen ondervinden, open dan een issue met gedetailleerde informatie over je probleem.</description>
     </item>
     
     <item>
@@ -52,18 +62,7 @@ De app is niet getest op Mac OS, omdat de emulators hiervoor nogal gelimiteerd z
     </item>
     
     <item>
-      <title>The Audiosync extension</title>
-      <link>https://vidify.org/nl/wiki/audiosync-extension/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://vidify.org/nl/wiki/audiosync-extension/</guid>
-      <description>Vidify heeft een audio synchronisatie functie. Deze is hier beschikbaar: vidify/audiosync. Het is nog niet volledig functioneel.
-Voorlopig is Audiosync alleen beschikbaar voor Linux. Het wordt sterk aangeraden om hierbij Mpv als videospeler te gebruiken. Je kan dit installeren met pip install vidify[audiosync], samen met de volgende extra vereisten:
- FFTW: libfftw3 op Debian gebaseerde distros. ffmpeg: ffmpeg beschikbaar voor praktisch alle distros. Moet beschikbaar zijn in jouw path. pulseaudio: pulseaudio, bijna altijd al geïnstalleerd.</description>
-    </item>
-    
-    <item>
-      <title>The external player protocol</title>
+      <title>Het externe speler protocol</title>
       <link>https://vidify.org/nl/wiki/the-external-player-protocol/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -2,8 +2,8 @@
 <html class="no-js" lang="nl-nl"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Vidify - The wiki articles to learn more about Vidify">
-<meta name="keywords" content="music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television">
+<meta name="description" content="Vidify - De wiki artikelen om meer te weten te komen over Vidify">
+<meta name="keywords" content="muziekvideo&#39;s, uitzenden, live, real-time, spotify, android, TV, windows, linux, mac os, televisie">
 
 
 
@@ -71,7 +71,7 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/" >Home</a>
+                                <a class="nav-link" href="https://vidify.org/nl/" >Start</a>
                             </li>
                             
                             
@@ -103,7 +103,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    Language
+                                    Taal
                                 </a>
                                 <div class="dropdown-menu">
                                     
@@ -154,7 +154,7 @@
                 <nav aria-label="breadcrumb mx-auto" role="navigation">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="https://vidify.org/">Home</a>
+                            <a href="https://vidify.org/">Start</a>
                         </li>
                         <li class="breadcrumb-item active" aria-current="page">Wiki</li>
                     </ol>
@@ -169,9 +169,10 @@
 <!-- Wiki Section Start -->
 <section class="blog section" id="wiki">
     <div class="container">
-        <h2 id="invoering">Invoering</h2>
-<p>Vidify is ontwikkeld om modulair te zijn. Standaard bevat deze ondersteuning voor de meeste populaire muziekspelers (zie ook <a href="#the-apis">APIs</a>). Hetzelfde geld voor de <a href="#the-players">videospelers</a> (standaard <a href="https://www.videolan.org/vlc/index.html">VLC</a> op het moment). Functionaliteit kan worden uitgebreid door de daarvoor nodige software te installeren, deze zijn gedocumenteerd in hun respectievelijke hoofdstukken.</p>
-<p>Hier zijn de verschillende manier om Vidify te installeren, afhankelijk van jouw besturingssysteem:</p>
+        <h1 id="introductie">Introductie</h1>
+<p>Om Vidify te gebruiken, moet je de dekstop app installeren op de computer waar de muziek op afspeelt. De makkelijkste manier om deze te installeren is door de binaries te downloaden. Je kunt de muziekvideo&rsquo;s direct kijken vanuit de desktop app, of als je de muziekvideo&rsquo;s wilt zien op een TV of telefoon kun je de Android app installeren, deze verbindt met Vidify over je netwerk.</p>
+<p>Op het moment ondersteunt Vidify: Spotify op Windows en Mac OS, en <span class="tooltip-text-custom" data-toggle="tooltip" title="alle MPRIS compatibele">vrijwel alle</span>
+ muziekspelers op Linux.</p>
 
 
 <div class="pricing-btn">
@@ -206,17 +207,12 @@
 
 
 
+<p>Als je meer technisch onderlegd bent, kun je beter Vidify downloaden van <a href="https://pypi.org/project/vidify">PyPi</a>. Linux gebruikers kunnen ook deze native alternatieven gebruiken:</p>
 <ul>
-<li><strong>Cross-platform:</strong> Met <a href="https://pypi.org/project/vidify">pip</a>: <code>pip install --user vidify</code>. Optionele APIs en Videospelers kunnen worden geïnstalleerd met <code>pip install --user vidify[extra1,extra2]</code>, dit is equivalent aan het installeren van de lijst van benodigdheden voor <code>extra1</code> en <code>extra2</code>.</li>
-<li><strong>Linux:</strong>
-<ul>
-<li>Arch Linux: je kunt dit vinden in de AUR: <a href="https://aur.archlinux.org/packages/vidify/"><code>vidify</code></a>. Onderhouden door mijzelf (<a href="https://github.com/marioortizmanero">marioortizmanero</a>).</li>
-<li>Gentoo Linux: er is een ebuild onderhouden door <a href="https://github.com/AndrewAmmerlaan">AndrewAmmerlaan</a> in de <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU overlay</a> genaamd <a href="https://gpo.zugaina.org/media-video/vidify">media-video/vidify</a>: <code>eselect repository enable guru &amp;&amp; emerge --sync guru &amp;&amp; emerge vidify</code></li>
-<li><em>Voel je vrij om dit te uploaden naar de repositories van jouw distro! Laat me dit weten in een issue zodat ik dit aan deze lijst kan toevoegen.</em></li>
+<li>Arch Linux: <a href="https://aur.archlinux.org/packages/vidify/">AUR</a>.</li>
+<li>Gentoo Linux: <a href="https://gpo.zugaina.org/media-video/vidify">GURU media-video/vidify</a>.</li>
 </ul>
-</li>
-</ul>
-<p><em>Opmerking: Vidify werkt alleen met Python &gt;= 3.6.</em></p>
+<p>Meer details over geavanceerde installatie kun je vinden op <a href="https://github.com/vidify/vidify#installation">GitHub</a> (de README bevat gedetailleerde informatie voor ervaren gebruikers).</p>
 <h3 id="de-apis">De APIs</h3>
 <p>Een API is een bron van informatie over welke muziek er op het moment op jouw apparaat afspeelt. Zoals bijvoorbeeld: de Spotify desktop client, of iTunes. Deze APIs zijn op het moment ondersteund:</p>
 <table>
@@ -245,70 +241,36 @@
 </tr>
 </tbody>
 </table>
-<h3 id="de-videospelers">De Videospelers</h3>
-<p>De in de app ingebedde videospelers. De standaard is VLC, omdat deze het meest populair is. Maar het staat je vrij om andere te gebruiken, als je de videospeler zelf en de daarbij horende Python modules hebt geïnstalleerd.</p>
-<table>
-<thead>
-<tr>
-<th>Naam</th>
-<th>Extra vereisten</th>
-<th>Beschrijving</th>
-<th>Argumenten/config opties</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>VLC</td>
-<td><a href="https://www.videolan.org/vlc/#download">VLC</a></td>
-<td>De standaard videospeler. veel gebruikt en heel stabiel.</td>
-<td><code>--vlc-args &lt;VLC_ARGS&gt;</code></td>
-</tr>
-<tr>
-<td>Mpv</td>
-<td><a href="https://mpv.io/installation/">Mpv</a>, <code>python-mpv</code></td>
-<td>Een opdrachtregel portable videospeler. Lichter en preciezer dan VLC.</td>
-<td><code>--mpv-flags &lt;MPV_ARGS&gt;</code> (alleen booleans)</td>
-</tr>
-<tr>
-<td>External</td>
-<td>Standaard geïnstalleerd</td>
-<td>Speel de video&rsquo;s af op een extern apparaat. Zie het hoofdstuk over <a href="#the-external-player">externe speler selectie</a> voor meer inforamtie.</td>
-<td>Geen</td>
-</tr>
-</tbody>
-</table>
-<h4 id="de-externe-speler">De Externe speler</h4>
-<p>De externe speler laat jou Vidify&rsquo;s muziekvideo&rsquo;s praktisch overal afspelen. Het stuurt alle informatie over de muziekvideo naar een externe applicatie. Hier zijn de huidige implementaties:</p>
-<ul>
-<li><strong>Vidify TV</strong>: beschikbaar voor Android, Android TV en Amazon Fire Stick TV. <a href="https://play.google.com/store/apps/details?id=com.glowapps.vidify">Play Store page</a>.</li>
-</ul>
+<h3 id="de-videospelers">De videospelers</h3>
+<p>De in de app ingebedde videospelers. Als je de binary gebruikt hoef je je hier geen zorgen over te maken, omdat deze al een installatie van <a href="https://mpv.io/">Mpv</a> bevat.</p>
+<p>Je kunt kiezen tussen Mpv of een externe video speler. Deze laatste laat je Vidify&rsquo;s muziekvideo&rsquo;s praktisch overal afspelen. Het stuurt alle informatie over de muziekvideos naar de Vidify app, <strong>Vidify TV</strong>. Deze is eschikbaar voor Android en Android TV <a href="https://play.google.com/store/apps/details?id=com.glowapps.vidify">here</a>.</p>
 
         
         <hr>
         
-        <h1>More</h1>
-        <p>You can read other articles on the Wiki:</p>
+        <h1>Meer</h1>
+        <p>Je kunt andere artikelen lezen op de Wiki:</p>
         <ul>
+            
+            <li><a href="https://vidify.org/nl/wiki/audiosync-extension/">De Audiosync extensie</a></li>
             
             <li><a href="https://vidify.org/nl/wiki/faq/">FAQ</a></li>
             
-            <li><a href="https://vidify.org/nl/wiki/linux-media-players/">Linux Media Players</a></li>
+            <li><a href="https://vidify.org/nl/wiki/linux-media-players/">Linux Mediaspelers</a></li>
             
-            <li><a href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/">Spotify for Windows and Mac OS</a></li>
+            <li><a href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/">Spotify voor Windows en Mac OS</a></li>
             
             <li><a href="https://vidify.org/nl/wiki/spotify-web-api/">Spotify Web API</a></li>
-            
-            <li><a href="https://vidify.org/nl/wiki/audiosync-extension/">The Audiosync extension</a></li>
             
         </ul>
         <hr>
         
         
-        <h1>For developers</h1>
-        <p>Advanced articles intended for developers:</p>
+        <h1>Voor ontwikkelaars</h1>
+        <p>Geavanceerde artikelen bedoeld voor ontwikkelaars:</p>
         <ul>
             
-            <li><a href="https://vidify.org/nl/wiki/the-external-player-protocol/">The external player protocol</a></li>
+            <li><a href="https://vidify.org/nl/wiki/the-external-player-protocol/">Het externe speler protocol</a></li>
             
         </ul>
         
@@ -325,8 +287,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>About</h3>
-                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
+                    <h3>Over</h3>
+                    <p>Vidify is een open source project in de kern. Iedereen kan bijdragen en verbeteren op <a href="https://github.com/vidify">GitHub</a>. Verder wordt het actief ontwikkeld, nieuwe oplossingen en functies worden frequent toegevoegd. Vergeet dus niet regelmatig te updaten.</p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>GitHub</h3>
@@ -347,11 +309,11 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>Quicklinks</h3>
+                    <h3>Snelle links</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/nl/wiki/">Getting Started</a>
+                            <a href="https://vidify.org/nl/wiki/">Introductie</a>
                         </li>
                         
                         <li>

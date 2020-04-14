@@ -2,8 +2,8 @@
 <html class="no-js" lang="nl-nl"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Vidify - What&#39;s it for and how to use it">
-<meta name="keywords" content="music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television">
+<meta name="description" content="Vidify - Wat de API betekent en hoe die werkt">
+<meta name="keywords" content="muziekvideo&#39;s, uitzenden, live, real-time, spotify, android, TV, windows, linux, mac os, televisie">
 
 
 
@@ -15,7 +15,7 @@
 
 <meta name="generator" content="Hugo 0.68.3" />
 
-<title>The Audiosync extension – Vidify</title>
+<title>De Audiosync extensie – Vidify</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -71,7 +71,7 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/" >Home</a>
+                                <a class="nav-link" href="https://vidify.org/nl/" >Start</a>
                             </li>
                             
                             
@@ -103,7 +103,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    Language
+                                    Taal
                                 </a>
                                 <div class="dropdown-menu">
                                     
@@ -155,34 +155,35 @@
                     <i class="tf-ion-android-arrow-back"></i>
                     <span>GO BACK</span>
                 </a>
-                <h2>The Audiosync extension</h2>
+                <h2>De Audiosync extensie</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         
-                        <p>What&#39;s it for and how to use it</p>
+                        <p>Wat de API betekent en hoe die werkt</p>
                         
                         <li class="list-inline-item">
                             
-                            <span>By</span>
+                            <span>Door</span>
                             <span>Mario Ortiz Manero</span>
                             
                             
-                            <span>at</span>
+                            <span>op</span>
                             <span>5 April 2020</span>
                             
                         </li>
                     </ul>
                 </div>
-                <p>Vidify heeft een audio synchronisatie functie. Deze is hier beschikbaar: <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. Het is nog niet volledig functioneel.</p>
+                <p>Je zal je realiseren dat sommige videos niet precies gesynchroniseerd zijn met de muziek. Dit is omdat de video&rsquo;s worden afgespeeld van YouTube, en dit zijn vaak andere versies van hetzelfde nummer, met verschillende intro&rsquo;s en uitro&rsquo;s&hellip; wat problemen oplevert met de timing. Dit is lastig om op te lossen, maar Vidify heeft desondanks een audio synchronisatie extensie die dit probeert.</p>
+<p>De gehele broncode is hier beschikbaar: <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. Het is nog niet volledig functioneel, en kan dus lastig in gebruik zijn.</p>
 <p>Voorlopig is Audiosync alleen beschikbaar voor Linux. Het wordt sterk aangeraden om hierbij Mpv als videospeler te gebruiken. Je kan dit installeren met <code>pip install vidify[audiosync]</code>, samen met de volgende extra vereisten:</p>
 <ul>
 <li>FFTW: <code>libfftw3</code> op Debian gebaseerde distros.</li>
-<li>ffmpeg: <code>ffmpeg</code> beschikbaar voor praktisch alle distros. Moet beschikbaar zijn in jouw path.</li>
+<li>ffmpeg: <code>ffmpeg</code> beschikbaar voor praktisch alle distros. Moet beschikbaar zijn in jouw <a href="https://superuser.com/q/284342">PATH</a>.</li>
 <li>pulseaudio: <code>pulseaudio</code>, bijna altijd al geïnstalleerd.</li>
 <li>youtube-dl: dit wordt al geïnstalleerd door Vidify, maar zorg ervoor dat dit beschikbaar is in jouw path.</li>
 </ul>
 <p>Het is ook beschikbaar als <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> in de AUR en als <a href="https://gpo.zugaina.org/media-video/vidify-audiosync">media-video/vidify-audiosync</a> in de <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU overlay</a>.</p>
-<p>Deze functie wordt geactiveerd met het <code>--audiosync</code> argument, of in het config bestand <a href="#the-config-file">config file</a>:</p>
+<p>Deze functie wordt geactiveerd met het <code>--audiosync</code> argument, of in het <a href="https://github.com/vidify/vidify#the-config-file">config bestand</a>:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
 <span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
 </code></pre></div><p>Je kunt de resultaten van audiosync kalibreren met de optie <code>--audiosync-calibration</code> of <code>audiosync_calibration</code>. Standaard is deze 0 milliseconden, maar dit is mogelijk afhankelijk van jouw hardware.</p>
@@ -202,8 +203,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>About</h3>
-                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
+                    <h3>Over</h3>
+                    <p>Vidify is een open source project in de kern. Iedereen kan bijdragen en verbeteren op <a href="https://github.com/vidify">GitHub</a>. Verder wordt het actief ontwikkeld, nieuwe oplossingen en functies worden frequent toegevoegd. Vergeet dus niet regelmatig te updaten.</p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>GitHub</h3>
@@ -224,11 +225,11 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>Quicklinks</h3>
+                    <h3>Snelle links</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/nl/wiki/">Getting Started</a>
+                            <a href="https://vidify.org/nl/wiki/">Introductie</a>
                         </li>
                         
                         <li>
