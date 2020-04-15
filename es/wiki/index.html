@@ -170,9 +170,8 @@
 <section class="blog section" id="wiki">
     <div class="container">
         <h1 id="introducción">Introducción</h1>
-<p>Para usar Vidify, siempre vas a necesitar la app de escritorio instalada donde la música está siendo reproducida. La manera más fácil de instalarla es descargando los binarios. Desde ahí puedes reproducir videoclips, pero si quieres hacerlo en una TV o móvil necesitarás la aplicación para Android instalada, que se comunica a través de tu red.</p>
-<p>Vidify actualmente soporta Spotify para Windows y Mac OS, y <span class="tooltip-text-custom" data-toggle="tooltip" title="todos los compatibles con MPRIS">casi todos</span>
- los reproductores de música de Linux.</p>
+<h2 id="descargando-vidify">Descargando Vidify</h2>
+<p>Necesitarás la <strong>app de escritorio Vidify</strong> instalada en el ordenador donde se reproduce tu música. Desde ahí podrás reproducir videoclips, pero si quieres verlos en tu móvil o TV necesitarás también la aplicación para Android, <strong>Vidify TV</strong>. Ésta se comunicará con Vidify a través de tu red y reproducirá los vídeos ahí. Puedes descargar ambos aquí:</p>
 
 
 <div class="pricing-btn">
@@ -207,43 +206,65 @@
 
 
 
-<p>Si sabes más sobre ordenadores, será mejor descargar Vidify desde <a href="https://pypi.org/project/vidify">PyPi</a>. Los usuarios de Linux tienen otras alternativas disponibles más nativas:</p>
-<ul>
-<li>Arch Linux: <a href="https://aur.archlinux.org/packages/vidify/">AUR</a>.</li>
-<li>Gentoo Linux: <a href="https://gpo.zugaina.org/media-video/vidify">GURU media-video/vidify</a>.</li>
-</ul>
-<p>Más detalles sobre las instalaciones avanzadas pueden encontrarse en <a href="https://github.com/vidify/vidify#installation">GitHub</a> (el README contiene información detallada para usuarios más experimentados).</p>
-<h3 id="las-apis">Las APIs</h3>
-<p>Una API simplemente es una fuente de información de la música reproducida en un dispositivo. Por ejemplo, la aplicación de Spotify de escritorio, o iTunes. Aquí están las soportadas actualmente:</p>
-<table>
-<thead>
-<tr>
-<th>Nombre</th>
-<th>Requerimientos extra</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/es/wiki/linux-media-players">Reproductores de música de Linux</a></td>
-<td><em>Instalado por defecto</em> (ver wiki)</td>
-<td>Cualquier reproductor compatible con MPRIS para Linux o BSD (un 99% de ellos, como Spotify, Clementine, VLC&hellip;).</td>
-</tr>
-<tr>
-<td><a href="/es/wiki/spotify-for-windows-and-macos">Spotify para Windows y MacOS</a></td>
-<td><em>Instalado por defecto</em></td>
-<td>La app de escritorio de Spotify para Windows y MAC OS.</td>
-</tr>
-<tr>
-<td><a href="/es/wiki/spotify-web-api">Spotify Web</a></td>
-<td><em>Instalado por defecto</em></td>
-<td>La API oficial de Spotify Web. Échale un ojo a su artículo de la wiki para más detalles de cómo usarla.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="los-reproductores-de-vídeo">Los reproductores de vídeo</h3>
-<p>Los reproductores de vídeo integrados dentro de la app. Si estás usando un binario, no te tienes que preocupar, porque ya viene con <a href="https://mpv.io/">Mpv</a> dentro.</p>
-<p>Podrás escoger entre Mpv y el reproductor externo. Este último te permite reproducir los videoclips de Vidify esencialmente en cualquier sitio. Enviará información de los vídeos a la app de Vidify, <strong>Vidify TV</strong>. Está disponible para Android y Android TV <a href="https://play.google.com/store/apps/details?id=com.glowapps.vidify">aquí</a>.</p>
+<p><em>Si sabes más de informática, puede que te interese instalarlo desde <a href="https://pypi.org/project/vidify">PyPi</a>, del <a href="https://aur.archlinux.org/packages/vidify/">AUR</a> o de <a href="https://gpo.zugaina.org/media-video/vidify">GURU</a>. Más detalles avanzados en <a href="https://github.com/vidify/vidify#installation">GitHub</a>.</em></p>
+<h3 id="reproduciendo-contenido">Reproduciendo contenido</h3>
+<p>Primero de todo, abre la aplicación de escritorio. Cuando se te pida, selecciona el <strong>reproductor de música</strong> que estés usando. Aquí están todos los actualmente disponibles:</p>
+
+<div class="apis-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th><a href="https://vidify.org/es/wiki/spotify-for-windows-and-macos" alt="Spotify para Windows o Mac OS"><img src="/images/apis/spotify/swspotify.svg"><span>Spotify para Windows o Mac OS</span></a></th>
+                <td>La app de escritorio de Spotify para Windows y Mac OS.</td>
+            </tr>
+            
+            <tr>
+                <th><a href="https://vidify.org/es/wiki/linux-media-players" alt="Reproductores de Linux"><img src="/images/apis/mpris.svg"><span>Reproductores de Linux</span></a></th>
+                <td>Cualquier reproductor compatible con MPRIS para Linux o BSD (un 99% de ellos, como Spotify, Clementine, VLC...).</td>
+            </tr>
+            
+            <tr>
+                <th><a href="https://vidify.org/es/wiki/spotify-web-api" alt="Spotify Web"><img src="/images/apis/spotify/web.svg"><span>Spotify Web</span></a></th>
+                <td>La API oficial de Spotify Web. Échale un ojo a su artículo de la wiki para más detalles de cómo usarla.</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+
+<p>A continuación, indica <strong>dónde reproducir los videoclips</strong>. Podrás escoger entre <a href="https://mpv.io/">el reproductor mpv</a> y el reproductor externo. Con mpv podrás reproducir los vídeos en ese mismo ordenador. Usa el reproductor externo para reproducir vídeos en cualquier otro dispositivo.</p>
+
+<div class="portfolio-block">
+    <img class="center-img-block" src="https://vidify.org/images/portfolio/laptop02-thumb.png" alt="Cómo será Vidify en tu ordenador" style="max-width:80%;">
+    <div class="caption">
+        <a class="gallery-open" href="https://vidify.org/images/portfolio/laptop02.png" data-fancybox="image-1">
+            <i class="tf-ion-ios-search-strong search-icon"></i>
+            
+        </a>
+    </div>
+</div>
+
+<p>Si quieres reproducir los vídeos en otro dispositivo, lo único que necesitas hacer es seleccionar el Reproductor Externo y abrir <strong>Vidify TV</strong> en tu móvil o televisión. En éste, aparecerá una tarjeta con información sobre el ordenador donde está corriendo Vidify. Selecciónala para comenzar inmediatamente a reproducir los videos:</p>
+
+<div class="portfolio-block">
+    <img class="center-img-block" src="https://vidify.org/images/portfolio/tv01-thumb.png" alt="Cómo será Vidify TV en tu televisión o móvil" style="max-width:80%;">
+    <div class="caption">
+        <a class="gallery-open" href="https://vidify.org/images/portfolio/tv01.png" data-fancybox="image-1">
+            <i class="tf-ion-ios-search-strong search-icon"></i>
+            
+        </a>
+    </div>
+</div>
+
+<p>Asegúrate de que el ordenador con Vidify y el dispositivo con Vidify TV están en la misma red. Así, tu ordenador le dirá a tu móvil o televisión qué vídeos reproducir. Vidify necesita también una conexión a internet estable.</p>
 
         
         <hr>
