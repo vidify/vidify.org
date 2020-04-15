@@ -215,34 +215,39 @@
 <p>Meer details over geavanceerde installatie kun je vinden op <a href="https://github.com/vidify/vidify#installation">GitHub</a> (de README bevat gedetailleerde informatie voor ervaren gebruikers).</p>
 <h3 id="de-apis">De APIs</h3>
 <p>Een API is een bron van informatie over welke muziek er op het moment op jouw apparaat afspeelt. Zoals bijvoorbeeld: de Spotify desktop client, of iTunes. Deze APIs zijn op het moment ondersteund:</p>
-<table>
-<thead>
-<tr>
-<th>Naam</th>
-<th>Extra vereisten</th>
-<th>Beschrijving</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/nl/wiki/linux-media-players">Linux Media Players</a></td>
-<td><em>Standaard geïnstalleerd</em> (zie de wiki)</td>
-<td>Elke MPRIS compatibele mediaspeler voor Linux of BSD (99% zou zeker moeten werken, zoals Spotify, Clementine, VLC&hellip;).</td>
-</tr>
-<tr>
-<td><a href="/wiki/spotify-for-windows-and-macos">Spotify voor Windows &amp; MacOS</a></td>
-<td><em>Standaard geïnstalleerd</em></td>
-<td>De Spotify desktop app voor Windows &amp; MacOS, maakt gebruik van de <a href="https://github.com/SwagLyrics/SwSpotify">SwSpotify</a> library.</td>
-</tr>
-<tr>
-<td><a href="/wiki/spotify-web-api">Spotify Web</a></td>
-<td><em>Standaard geïnstalleerd</em></td>
-<td>De officiële Spotify Web API, maakt gebruik van <a href="https://github.com/felix-hilden/tekore">Tekore</a>. Zie de wiki voor instructies over hoe je dit instelt.</td>
-</tr>
-</tbody>
-</table>
+
+<div class="apis-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <th><a href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos" alt="Spotify voor Windows/Mac OS"><img src="/images/apis/spotify/swspotify.svg"><span>Spotify voor Windows/Mac OS</span></a></th>
+                <td>De Spotify desktop app voor Windows/Mac OS.</td>
+            </tr>
+            
+            <tr>
+                <th><a href="https://vidify.org/nl/wiki/linux-media-players" alt="Linux Media Players"><img src="/images/apis/mpris.svg"><span>Linux Media Players</span></a></th>
+                <td>Elke MPRIS compatibele mediaspeler voor Linux of BSD (99% zou zeker moeten werken, zoals Spotify, Clementine, VLC...).</td>
+            </tr>
+            
+            <tr>
+                <th><a href="https://vidify.org/nl/wiki/spotify-web-api" alt="Spotify Web"><img src="/images/apis/spotify/web.svg"><span>Spotify Web</span></a></th>
+                <td>De officiële Spotify Web API. Zie de wiki voor instructies over hoe je dit instelt.</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+
 <h3 id="de-videospelers">De videospelers</h3>
-<p>De in de app ingebedde videospelers. Als je de binary gebruikt hoef je je hier geen zorgen over te maken, omdat deze al een installatie van <a href="https://mpv.io/">Mpv</a> bevat.</p>
+<p>De in de app ingebedde videospelers. Als je de binary gebruikt hoef je je hier geen zorgen over te maken, omdat deze al een installatie van <a href="https://mpv.io/">mpv</a> bevat.</p>
 <p>Je kunt kiezen tussen Mpv of een externe video speler. Deze laatste laat je Vidify&rsquo;s muziekvideo&rsquo;s praktisch overal afspelen. Het stuurt alle informatie over de muziekvideos naar de Vidify app, <strong>Vidify TV</strong>. Deze is eschikbaar voor Android en Android TV <a href="https://play.google.com/store/apps/details?id=com.glowapps.vidify">here</a>.</p>
 
         
