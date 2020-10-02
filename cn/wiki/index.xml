@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vidify</title>
+    <link>https://vidify.org/cn/wiki/</link>
+    <description>Recent content on Vidify</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://vidify.org/cn/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/audiosync-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/audiosync-extension/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/faq/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/linux-media-players/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/linux-media-players/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/spotify-for-windows-and-macos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/spotify-for-windows-and-macos/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/spotify-web-api/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/spotify-web-api/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://vidify.org/cn/wiki/the-external-player-protocol/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/wiki/the-external-player-protocol/</guid>
+      <description>待翻译中</description>
+    </item>
+    
+  </channel>
+</rss>

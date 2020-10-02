@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>最后更新 on Vidify</title>
+    <link>https://vidify.org/cn/blog/</link>
+    <description>Recent content in 最后更新 on Vidify</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/cn/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Discord 服务器</title>
+      <link>https://vidify.org/cn/blog/discord/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/blog/discord/</guid>
+      <description>我已经为 Vdifiy 创建了一个 Discord 服务器！你可以用 这条链接 来加入。它是为了在 GitHub 之外进行快速对话，出于开发和用户的原因。
+我最初打算使用一个开源的替代品，但决定使用Discord，因为它是最容易使用的，如果你想建议其他平台，请告诉我。
+如果你对 Discord 服务器有经验的话，我也想得到一些帮助，因为我以前没有管理过:）</description>
+    </item>
+    
+    <item>
+      <title>网页启动</title>
+      <link>https://vidify.org/cn/blog/launch/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/cn/blog/launch/</guid>
+      <description>我正式发布了 Vidify ！
+本网站为非开发商提供服务， 我会把 GitHub 中关于如何使用 Vidify 的部分文档迁移到这里。wik 在这里也比较好管理，因为多种语言可以很方便的使用，所有人还是可以通过发送 PR 到 vidify/vidify.org-source 来进行贡献，这比在 wiki 中做出贡献要好的多</description>
+    </item>
+    
+  </channel>
+</rss>

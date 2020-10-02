@@ -3,6 +3,76 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vidify.org/blog/discord/</loc>
+    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/blog/discord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/blog/discord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/blog/discord/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/blog/</loc>
+    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/blog/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/</loc>
+    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="nl"
+                href="https://vidify.org/nl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/"
+                />
+  </url>
+  
+  <url>
     <loc>https://vidify.org/wiki/faq/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -14,6 +84,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/faq/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/faq/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -37,6 +112,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/linux-media-players/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/wiki/linux-media-players/"
                 />
@@ -54,6 +134,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/spotify-for-windows-and-macos/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -77,6 +162,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/spotify-web-api/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/wiki/spotify-web-api/"
                 />
@@ -97,28 +187,13 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/audiosync-extension/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/wiki/audiosync-extension/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vidify.org/</loc>
-    <lastmod>2020-04-05T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/"
                 />
   </url>
   
@@ -137,28 +212,13 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/wiki/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://vidify.org/blog/</loc>
-    <lastmod>2020-04-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="nl"
-                href="https://vidify.org/nl/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/blog/"
                 />
   </url>
   
@@ -174,6 +234,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://vidify.org/nl/blog/launch/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/blog/launch/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -196,6 +261,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/categories/"
                 />
@@ -212,6 +282,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://vidify.org/nl/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -234,6 +309,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/tags/"
                 />
@@ -245,6 +325,11 @@
                 rel="alternate"
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/the-external-player-protocol/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/wiki/the-external-player-protocol/"
                 />
     <xhtml:link
                 rel="alternate"

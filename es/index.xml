@@ -6,10 +6,16 @@
     <description>Recent content on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://vidify.org/es/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Servidor de Discord</title>
+      <link>https://vidify.org/es/blog/discord/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/es/blog/discord/</guid>
+      <description>¡He creado un servidor de Discord para Vidify! Puedes unirte usando este link. El objetivo es poder tener conversaciones fuera de GitHub, bien para desarrolladores o para usuarios. Es un servidor inglés, así que te pedimos que intentes usar ese lenguaje para entendernos todos.
+En un principio iba a usar una alternativa open source pero opté por Discord por ser la opción más fácil. Si quieres sugerir otra plataforma por favor házmelo saber.</description>
+    </item>
     
     <item>
       <title>Lanzamiento de la página web</title>

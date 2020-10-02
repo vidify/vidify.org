@@ -5,10 +5,6 @@
     <link>https://vidify.org/nl/contact/</link>
     <description>Recent content in Neem contact op on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>nl-nl</language>
-    
-	<atom:link href="https://vidify.org/nl/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>nl-nl</language><atom:link href="https://vidify.org/nl/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
