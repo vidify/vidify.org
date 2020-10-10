@@ -6,7 +6,18 @@
     <description>Recent content in The latest updates on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optional parameters in Rust</title>
+      <link>https://vidify.org/blog/rust-parameters/</link>
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/blog/rust-parameters/</guid>
+      <description>Disclaimer: although this post is not directly related to Vidify, I decided to post it here, since this problem arose in the process of integrating Rust , while improving Rspotify .
+Optional or default parameters are a very interesting feature of some languages that Rust specifically doesn&amp;rsquo;t cover (and looks like it won&amp;rsquo;t anytime soon ). Say your library has lots of endpoints like so:
+fn endpoint&amp;lt;T1, T2, T3, ...&amp;gt;(mandatory: T1, opt1: Option&amp;lt;T2&amp;gt;, opt2: Option&amp;lt;T3&amp;gt;, .</description>
+    </item>
+    
     <item>
       <title>Discord server</title>
       <link>https://vidify.org/blog/discord/</link>

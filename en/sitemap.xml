@@ -3,28 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vidify.org/blog/discord/</loc>
-    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://vidify.org/es/blog/discord/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://vidify.org/cn/blog/discord/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://vidify.org/blog/discord/"
-                />
+    <loc>https://vidify.org/blog/rust-parameters/</loc>
+    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://vidify.org/blog/</loc>
-    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -49,7 +34,7 @@
   
   <url>
     <loc>https://vidify.org/</loc>
-    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -69,6 +54,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://vidify.org/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vidify.org/blog/discord/</loc>
+    <lastmod>2020-09-25T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://vidify.org/es/blog/discord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://vidify.org/cn/blog/discord/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vidify.org/blog/discord/"
                 />
   </url>
   
