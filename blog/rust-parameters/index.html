@@ -279,8 +279,25 @@ the number of optional parameters.</li>
 <p>Another option is to create a struct that holds the parameters and use that
 instead. The complexity is still relatively simple, and it can work out well
 if the API has functions with repetitive function signatures. This will serve
-as a base for the following approaches as well.</p>
+as a base for the following approaches as well:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> call1 <span style="color:#f92672">=</span> params::ApproachC {
+    name: <span style="color:#e6db74">&#34;builder&#34;</span>.to_string(),
+    opt1: Some(param2),
+    opt2: Some(<span style="color:#ae81ff">123</span>),
+};
+api.approach_c(<span style="color:#f92672">&amp;</span>call1)<span style="color:#f92672">?</span>;
+</code></pre></div><p>We can even use <code>..Default::default()</code> to initialize the rest of the parameters
+with their default values:</p>
+<pre><code>let call2 = params::ApproachC {
+    name: &quot;builder&quot;.to_string(),
+    ..Default::default()
+};
+api.approach_c(&amp;call2)?;
+</code></pre><p>The implementation looks like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">mod</span> params {
+    <span style="color:#e6db74">/// We derive `Default` to be able to initialize with
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// `..Default::default()`.
+</span><span style="color:#e6db74"></span>    <span style="color:#75715e">#[derive(Default)]</span>
     <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">ApproachC</span> {
         <span style="color:#66d9ef">pub</span> name: String,
         <span style="color:#66d9ef">pub</span> opt1: Option<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u32</span><span style="color:#f92672">&gt;</span>,
@@ -293,18 +310,6 @@ as a base for the following approaches as well.</p>
         self.actual_endpoint(<span style="color:#f92672">&amp;</span>data.name, data.opt1, data.opt2)
     }
 }
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">let</span> call1 <span style="color:#f92672">=</span> params::ApproachC {
-    name: <span style="color:#e6db74">&#34;builder&#34;</span>.to_string(),
-    opt1: Some(param2),
-    opt2: Some(<span style="color:#ae81ff">123</span>),
-};
-<span style="color:#66d9ef">let</span> call2 <span style="color:#f92672">=</span> params::ApproachC {
-    name: <span style="color:#e6db74">&#34;builder&#34;</span>.to_string(),
-    opt1: None,
-    opt2: None,
-};
-api.approach_c(<span style="color:#f92672">&amp;</span>call1)<span style="color:#f92672">?</span>;
-api.approach_c(<span style="color:#f92672">&amp;</span>call2)<span style="color:#f92672">?</span>;
 </code></pre></div><h3 id="upsides-2">Upsides</h3>
 <ul>
 <li>Some APIs might feel more natural this way, if the combination of these
@@ -584,7 +589,8 @@ showcase of the different ways optional parameters can be approached in Rust,
 and that reading this served as a learning experience. I look forward to seeing
 new crates in the future that help make some of the approaches easier to
 implement.</p>
-<p>The code for the different approaches can be found <a href="">here</a>. Bear in mind that
+<p>The code for the different approaches can be found <a href="https://github.com/marioortizmanero/rust-optional-params">here
+</a>. Bear in mind that
 there are a lot of different ways to implement the approaches, as I explained
 in this post. You can discuss about it at the <a href="https://www.reddit.com/r/rust/comments/j8p6fx/optional_parameters_in_rust">reddit thread
 </a>.</p>
