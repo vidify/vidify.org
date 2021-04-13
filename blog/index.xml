@@ -13,9 +13,9 @@
       <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://vidify.org/blog/rust-parameters/</guid>
-      <description>Disclaimer: although this post is not directly related to Vidify, I decided to post it here, since this problem arose in the process of integrating Rust , while improving Rspotify .
+      <description>Disclaimer: I will now be posting these kind of posts at my personal blog: https://nullderef.com/blog/rust-parameters/
 Optional or default parameters are a very interesting feature of some languages that Rust specifically doesn&amp;rsquo;t cover (and looks like it won&amp;rsquo;t anytime soon ). Say your library has lots of endpoints like so:
-fn endpoint&amp;lt;T1, T2, T3, ...&amp;gt;(mandatory: T1, opt1: Option&amp;lt;T2&amp;gt;, opt2: Option&amp;lt;T3&amp;gt;, .</description>
+fn endpoint&amp;lt;T1, T2, T3, ...&amp;gt;(mandatory: T1, opt1: Option&amp;lt;T2&amp;gt;, opt2: Option&amp;lt;T3&amp;gt;, ...); In this case, when you call endpoint, you have to use endpoint(mandatory, None, None, .</description>
     </item>
     
     <item>

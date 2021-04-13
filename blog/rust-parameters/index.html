@@ -8,7 +8,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.76.2" />
+<meta name="generator" content="Hugo 0.82.0" />
 
 <title>Optional parameters in Rust – Vidify</title>
 
@@ -181,10 +181,8 @@
                         </li>
                     </ul>
                 </div>
-                <p><em>Disclaimer: although this post is not directly related to Vidify, I decided to
-post it here, since this problem arose in the process of <a href="https://github.com/vidify/vidify/issues/107">integrating Rust
-</a>, while improving <a href="https://github.com/ramsayleung/rspotify/pull/120#issuecomment-683349883">Rspotify
-</a>.</em></p>
+                <p><em>Disclaimer: I will now be posting these kind of posts at my personal blog:
+<a href="https://nullderef.com/blog/rust-parameters/">https://nullderef.com/blog/rust-parameters/</a></em></p>
 <p>Optional or default parameters are a very interesting feature of some languages
 that Rust specifically doesn&rsquo;t cover (and looks like it won&rsquo;t <a href="https://github.com/rust-lang/rfcs/pull/2964">anytime soon
 </a>). Say your library has lots of
@@ -481,9 +479,8 @@ of a waste to use this macro. It also forces us to create the wrapper because
 the builder always has to be initialized with <code>Builder::default()</code>. With a
 custom implementation, we could have this new method integrated in the builder
 itself instead, like <code>Builder::new(A, B, C)</code>.</p>
-<p>Thus, it might be better to use other crates like <a href="https://github.com/raiden-rs/safe-builder"><code>safe-builder</code>
-</a> (WIP and basically abandoned), or
-just a custom implementation.</p>
+<p>Thus, it might be better to use other crates like <a href="https://crates.io/crates/typed-builder"><code>typed-builder</code>
+</a>, or just a custom implementation.</p>
 <h3 id="upsides-5">Upsides</h3>
 <ul>
 <li>Although mandatory parameters don&rsquo;t have a parameter name now, it&rsquo;s still

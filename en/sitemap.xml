@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://vidify.org/blog/rust-parameters/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/blog/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -30,9 +27,7 @@
                 hreflang="en"
                 href="https://vidify.org/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/</loc>
     <lastmod>2020-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -55,9 +50,7 @@
                 hreflang="en"
                 href="https://vidify.org/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/blog/discord/</loc>
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -75,9 +68,7 @@
                 hreflang="en"
                 href="https://vidify.org/blog/discord/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/faq/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -100,9 +91,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/faq/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/linux-media-players/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -125,9 +114,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/linux-media-players/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/spotify-for-windows-and-macos/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -150,9 +137,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/spotify-for-windows-and-macos/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/spotify-web-api/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -175,9 +160,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/spotify-web-api/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/audiosync-extension/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -200,9 +183,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/audiosync-extension/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -225,9 +206,7 @@
                 hreflang="en"
                 href="https://vidify.org/wiki/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/blog/launch/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -250,9 +229,7 @@
                 hreflang="en"
                 href="https://vidify.org/blog/launch/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -274,9 +251,7 @@
                 hreflang="en"
                 href="https://vidify.org/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -298,9 +273,7 @@
                 hreflang="en"
                 href="https://vidify.org/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -322,9 +295,7 @@
                 hreflang="en"
                 href="https://vidify.org/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/wiki/the-external-player-protocol/</loc>
     <xhtml:link
                 rel="alternate"
@@ -342,5 +313,4 @@
                 href="https://vidify.org/wiki/the-external-player-protocol/"
                 />
   </url>
-  
 </urlset>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://vidify.org/nl/wiki/audiosync-extension/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
@@ -25,9 +24,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/audiosync-extension/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/faq/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -50,9 +47,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/faq/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/linux-media-players/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -75,9 +70,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/linux-media-players/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/spotify-for-windows-and-macos/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -100,9 +93,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/spotify-web-api/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -125,9 +116,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/spotify-web-api/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -150,9 +139,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/</loc>
     <lastmod>2020-04-05T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -175,9 +162,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/blog/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -200,9 +185,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/blog/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/blog/launch/</loc>
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -225,9 +208,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/blog/launch/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -249,9 +230,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/categories/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/wiki/the-external-player-protocol/</loc>
     <xhtml:link
                 rel="alternate"
@@ -268,9 +247,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/wiki/the-external-player-protocol/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -292,9 +269,7 @@
                 hreflang="nl"
                 href="https://vidify.org/nl/contact/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://vidify.org/nl/tags/</loc>
     <xhtml:link
                 rel="alternate"
@@ -317,5 +292,4 @@
                 href="https://vidify.org/nl/tags/"
                 />
   </url>
-  
 </urlset>
