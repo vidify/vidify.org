@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js" lang="nl-nl"><head>
+<html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Vidify - Wat de API betekent en hoe die werkt">
-<meta name="keywords" content="muziekvideo&#39;s, uitzenden, live, real-time, spotify, android, TV, windows, linux, mac os, televisie">
+<meta name="description" content="Vidify - The problems Vidify is facing and how I plan to work on it">
+<meta name="keywords" content="music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television">
  <meta name="author" content="map[email:marioortizmanero@gmail.com github:https://github.com/marioortizmanero image:images/author.jpg linkedin:https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/ name:Mario Ortiz Manero]">
 
-
-        <link rel="alternate" hreflang="en" href="/wiki/audiosync-extension/" title="">
-    
-        <link rel="alternate" hreflang="es" href="/es/wiki/audiosync-extension/" title="">
-    
-        <link rel="alternate" hreflang="cn" href="/cn/wiki/audiosync-extension/" title="">
-    
 
 
 <meta name="generator" content="Hugo 0.83.1" />
 
-<title>De Audiosync extensie – Vidify</title>
+<title>The state of Vidify in 2021 – Vidify</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +50,7 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="https://vidify.org/nl/">
+                    <a class="navbar-brand" href="https://vidify.org/">
                         <img src="https://vidify.org/images/logo.png" alt="Vidify">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -73,25 +66,25 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/" >Start</a>
+                                <a class="nav-link" href="https://vidify.org/" >Home</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/wiki" >Wiki</a>
+                                <a class="nav-link" href="https://vidify.org/wiki" >Wiki</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/blog" >Blog</a>
+                                <a class="nav-link" href="https://vidify.org/blog" >Blog</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/nl/contact" >Contact</a>
+                                <a class="nav-link" href="https://vidify.org/contact" >Contact</a>
                             </li>
                             
                             
@@ -105,7 +98,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    Taal
+                                    Language
                                 </a>
                                 <div class="dropdown-menu">
                                     
@@ -120,8 +113,8 @@
                                     
                                         
 
-    <a href="https://vidify.org/en" class="dropdown-item">
-
+    <a href="https://vidify.org/en" class="dropdown-item selected">
+    
 <span class="lang-code">en</span>
 <span class="lang-name">English</span>
 </a>
@@ -138,8 +131,8 @@
                                     
                                         
 
-    <a href="https://vidify.org/nl" class="dropdown-item selected">
-    
+    <a href="https://vidify.org/nl" class="dropdown-item">
+
 <span class="lang-code">nl</span>
 <span class="lang-name">Nederlands</span>
 </a>
@@ -162,49 +155,133 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 
-                <a href="https://vidify.org/nl/wiki">
+                <a href="https://vidify.org/blog">
                     <i class="tf-ion-android-arrow-back"></i>
                     <span>GO BACK</span>
                 </a>
-                <h2>De Audiosync extensie</h2>
+                <h2>The state of Vidify in 2021</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         
-                        <p>Wat de API betekent en hoe die werkt</p>
+                        <p>The problems Vidify is facing and how I plan to work on it</p>
                         
                         <li class="list-inline-item">
                             
-                            <span>Door</span>
+                            <span>By</span>
                             <span>Mario Ortiz Manero</span>
                             
                             
-                            <span>op</span>
-                            <span>5 April 2020</span>
+                            <span>at</span>
+                            <span>May 15, 2021</span>
                             
                             <!-- Reading time, with support for different languages -->
                             
                             
-                            <span>, 2</span>
+                            <span>, 5 minutes read</span>
                         </li>
                     </ul>
                 </div>
-                <p>Je zal je realiseren dat sommige videos niet precies gesynchroniseerd zijn met de muziek. Dit is omdat de video&rsquo;s worden afgespeeld van YouTube, en dit zijn vaak andere versies van hetzelfde nummer, met verschillende intro&rsquo;s en uitro&rsquo;s&hellip; wat problemen oplevert met de timing. Dit is lastig om op te lossen, maar Vidify heeft desondanks een audio synchronisatie extensie die dit probeert.</p>
-<p>De gehele broncode is hier beschikbaar: <a href="https://github.com/vidify/audiosync">vidify/audiosync</a>. Het is nog niet volledig functioneel, en kan dus lastig in gebruik zijn.</p>
-<p>Voorlopig is Audiosync alleen beschikbaar voor Linux. Het wordt sterk aangeraden om hierbij Mpv als videospeler te gebruiken. Je kan dit installeren met <code>pip install vidify[audiosync]</code>, samen met de volgende extra vereisten:</p>
+                <p>I wanted to give some closure regarding Vidify to its followers, I&rsquo;m very
+grateful for the support I&rsquo;ve received. I haven&rsquo;t been working on this lately;
+I&rsquo;ve been with other projects and more stuff outside of programming so I had put
+Vidify aside for some time. I wanted to explain <em>why</em> in this article.</p>
+<h2 id="the-issues">The Issues</h2>
+<p>I have some very big issues that I have to deal with before continuing, which
+have prevented me from working on Vidify further until now:</p>
+<h3 id="copyright">Copyright</h3>
+<p>I&rsquo;m not sure how to handle legal issues regarding video playback from YouTube.
+This is very complicated to me because I don&rsquo;t know anything about the topic and
+I would have to hire a consultant &ndash; for which I don&rsquo;t really have the money
+right now.</p>
+<p>As far as I know the possible copyright infringement issues aren&rsquo;t a deal
+breaker for Vidify. This is how I currently think it&rsquo;ll go (before consulting
+anyone):</p>
+<p>Vidify has to own the videos it displays, and it needs to save them outside of
+YouTube. This is what makes the most sense to me, since we&rsquo;re not only using
+copyrighted material, but also infringing YouTube&rsquo;s Terms of Service when we
+download their videos, meaning that they could block us in any moment.</p>
+<p>There&rsquo;s a catch, though! There doesn&rsquo;t seem to be a problem with playing YouTube
+videos if we use their <a href="https://developers.google.com/youtube/iframe_api_reference">official player
+API</a>. This is
+currently what Vidify uses for the mobile app and what was being worked on by
+@pawKer at <a href="https://github.com/vidify/vidify/pull/118">#118</a>.</p>
+<p>The problem would be simplified if we limited Vidify to the official YouTube API
+then, as we wouldn&rsquo;t be infringing their ToS. But someone would still have to
+pay to the owners of the videos we display. For this, what I&rsquo;m not sure about is
+if it&rsquo;s <em>Vidify</em> the one that would have to pay for all of their users, or if
+the payment would have to come from <em>each individual user</em> on their own. There
+are platforms like <a href="https://www.jukinmedia.com/">JunkinMedia</a> that help with
+this, which could establish a monthly/yearly fee only for access to the
+copyrighted content.</p>
+<p>My current plan is to continue developing Vidify until it&rsquo;s more popular, at
+which point there&rsquo;ll be a bigger risk of getting a complaint, but I&rsquo;ll probably
+have more resources to handle this issue.</p>
+<h3 id="audio-synchronization">Audio Synchronization</h3>
+<p>I personally don&rsquo;t think Vidify will be a good enough program until a decent
+audio synchronization system is implemented. By good enough I mean that someone
+would pay for it; as I&rsquo;ve commented earlier it&rsquo;s very likely I&rsquo;ll have to
+implement a subscription model for Vidify due to copyright issues. And my <a href="https://github.com/vidify/old-audiosync">first
+attempt</a> was fun, but not really
+viable.</p>
+<p>This is also extremely complicated to me because I&rsquo;m still a student and I
+haven&rsquo;t been taught much about the topic yet. I have to dedicate a lot of time
+to investigate about how this could possibly be done, and even more implementing
+it. Fortunately, I will be taking Audio Engineering courses during my next
+semester, which should help me get a better understanding about it.</p>
+<h3 id="rust-integration">Rust Integration</h3>
+<p>After thinking it through I don&rsquo;t think <a href="https://www.rust-lang.org/">Rust</a>
+integration in <a href="https://github.com/vidify/vidify/pull/108">#108</a> is worth it
+either. If anything I&rsquo;ll just make some Python bindings for the audiosync
+feature, but including Rust in the core of Vidify just a maintenance burden that
+isn&rsquo;t really that much of an improvement. It did help me sharpen my Rust skills,
+but it wasn&rsquo;t helping the Vidify project altogether, and I&rsquo;ve learned the
+lesson.</p>
+<p>Said PR still has a lot of interesting things I want to keep, though:</p>
 <ul>
-<li>FFTW: <code>libfftw3</code> op Debian gebaseerde distros.</li>
-<li>ffmpeg: <code>ffmpeg</code> beschikbaar voor praktisch alle distros. Moet beschikbaar zijn in jouw <a href="https://superuser.com/q/284342">PATH</a>.</li>
-<li>pulseaudio: <code>pulseaudio</code>, bijna altijd al geïnstalleerd.</li>
-<li>youtube-dl: dit wordt al geïnstalleerd door Vidify, maar zorg ervoor dat dit beschikbaar is in jouw path.</li>
+<li>An improved CI</li>
+<li>An improved build system, including WIP Windows Store support</li>
+<li>Removing VLC support</li>
+<li>Removing the QtWebEngine in place for a web server</li>
 </ul>
-<p>Het is ook beschikbaar als <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> in de AUR en als <a href="https://gpo.zugaina.org/media-video/vidify-audiosync">media-video/vidify-audiosync</a> in de <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU overlay</a>.</p>
-<p>Deze functie wordt geactiveerd met het <code>--audiosync</code> argument, of in het <a href="https://github.com/vidify/vidify#the-config-file">config bestand</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
-<span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
-</code></pre></div><p>Je kunt de resultaten van audiosync kalibreren met de optie <code>--audiosync-calibration</code> of <code>audiosync_calibration</code>. Standaard is deze 0 milliseconden, maar dit is mogelijk afhankelijk van jouw hardware.</p>
-<p><em>Opmerking: als er geen geluid is, dan moet je misschien &lsquo;stream target device restore&rsquo; uitzetten door de corresponderende lijn in <code>/etc/pulse/default.pa</code> te veranderen naar <code>load-module module-stream-restore restore_device=false</code>.</em></p>
-<p><em>Opmerking 2: bevestig dat de sink waarvan wordt opgenomen <code>audiosync</code> is, of de sink waar de muziek op afspeelt. Hier is een voorbeeld in Pavucontrol (Meestal heet dit &lsquo;Monitor of &hellip;'):</em></p>
-<p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
+<p>I&rsquo;ll be moving <a href="https://github.com/vidify/structconf">structconf</a> to my own
+profile, as it won&rsquo;t be used by Vidify anymore.</p>
+<h3 id="youtube-dl-breakage">Youtube-dl Breakage</h3>
+<p>Vidify needs to update automatically in order to avoid issues with <code>youtube-dl</code>.
+It gets outdated very quickly, which means the videos stop working if you don&rsquo;t
+update <code>youtube-dl</code>. This is a big problem when Vidify is built statically
+because updating it isn&rsquo;t easy.</p>
+<p>The best solution to this in my opinion is to upload Vidify to the main
+repositories in all Operating Systems, so that this is handled by them. I don&rsquo;t
+really want to add an auto-updater feature to Vidify; I dislike it when that
+happens with Steam/Discord/etc instead of via the official repositories, and I
+consider it unnecessary when I can use:</p>
+<ul>
+<li><strong>Windows</strong>: the Windows Store, building statically.</li>
+<li><strong>Linux</strong>: <a href="https://snapcraft.io/">Snap</a>/<a href="https://flatpak.org/">Flatpak</a> for
+distros with slow updates (Ubuntu/Debian), and the official repos for the rest
+of them (Arch, Gentoo, &hellip;). The builds can be dynamic in this case.</li>
+<li><strong>MacOS</strong>: the App Store can be used for that, building statically. Although
+developing stuff for Apple sucks if you don&rsquo;t want to buy one of their
+products for the low cost of $1K.</li>
+</ul>
+<p>Then, I could just have a Continuous Deployment flow that uploads an update each
+week for the statically built packages (Windows and MacOS). Vidify could try to
+&ldquo;ping&rdquo; <code>youtube-dl</code> when launched, and if that fails, it can just ask the user
+to update it. This shouldn&rsquo;t really be a problem because the repositories I
+mentioned earlier update automatically.</p>
+<h2 id="the-plan">The Plan</h2>
+<p>Since the audio synchronization feature is a blocker until I can fully release
+Vidify and it&rsquo;s not coming soon, I will be working on its core in the meanwhile:</p>
+<ul>
+<li>Clean up the Rust Integration PR</li>
+<li>Polish the Web Server Player PR and merge it</li>
+<li>Work on the new deployment method</li>
+</ul>
+<p>After that&rsquo;s done I&rsquo;ll probably have a better grasp at audio engineering, and
+will be able to work on the audiosync feature I have always wanted.</p>
+<hr>
+<p>What do you think? Any thoughts/opinions? You can discuss with us at the <a href="https://discord.gg/dpfF6ev7Hu">Vidify
+Discord</a>.</p>
 
 
                 
@@ -214,7 +291,7 @@
     <p>Share this post on...</p>
     <div class="sharing-buttons">
         
-        <a class="sharing-button-link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fvidify.org%2fnl%2fwiki%2faudiosync-extension%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fvidify.org%2fblog%2f202105-update%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-facebook sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-facebook"></i>
             </div>
@@ -222,7 +299,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="https://twitter.com/intent/tweet/?text=Vidify%20-%20De%20Audiosync%20extensie&url=https%3a%2f%2fvidify.org%2fnl%2fwiki%2faudiosync-extension%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://twitter.com/intent/tweet/?text=Vidify%20-%20The%20state%20of%20Vidify%20in%202021&url=https%3a%2f%2fvidify.org%2fblog%2f202105-update%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-twitter sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-twitter"></i>
             </div>
@@ -230,7 +307,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="whatsapp://send?text=Vidify%20-%20De%20Audiosync%20extensie https%3a%2f%2fvidify.org%2fnl%2fwiki%2faudiosync-extension%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="whatsapp://send?text=Vidify%20-%20The%20state%20of%20Vidify%20in%202021 https%3a%2f%2fvidify.org%2fblog%2f202105-update%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-whatsapp sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-whatsapp"></i>
             </div>
@@ -238,7 +315,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="https://telegram.me/share/url?text=Vidify%20-%20De%20Audiosync%20extensie&url=https%3a%2f%2fvidify.org%2fnl%2fwiki%2faudiosync-extension%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://telegram.me/share/url?text=Vidify%20-%20The%20state%20of%20Vidify%20in%202021&url=https%3a%2f%2fvidify.org%2fblog%2f202105-update%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-telegram sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-paper-airplane"></i>
             </div>
@@ -246,7 +323,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="mailto:?subject=Vidify%20-%20De%20Audiosync%20extensie&body=https%3a%2f%2fvidify.org%2fnl%2fwiki%2faudiosync-extension%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="mailto:?subject=Vidify%20-%20The%20state%20of%20Vidify%20in%202021&body=https%3a%2f%2fvidify.org%2fblog%2f202105-update%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-email sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-email"></i>
             </div>
@@ -267,8 +344,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>Over</h3>
-                    <p>Vidify is een open source project in de kern. Iedereen kan bijdragen en verbeteren op <a href="https://github.com/vidify">GitHub</a>. Verder wordt het actief ontwikkeld, nieuwe oplossingen en functies worden frequent toegevoegd. Vergeet dus niet regelmatig te updaten.</p>
+                    <h3>About</h3>
+                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>GitHub</h3>
@@ -289,15 +366,15 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>Snelle links</h3>
+                    <h3>Quicklinks</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/nl/wiki/">Introductie</a>
+                            <a href="https://vidify.org/wiki/">Getting Started</a>
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/nl/wiki/faq/">FAQ&#39;s</a>
+                            <a href="https://vidify.org/wiki/faq/">FAQ&#39;s</a>
                         </li>
                         
                     </ul>

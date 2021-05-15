@@ -6,7 +6,17 @@
     <description>Recent content in The latest updates on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The state of Vidify in 2021</title>
+      <link>https://vidify.org/blog/202105-update/</link>
+      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/blog/202105-update/</guid>
+      <description>I wanted to give some closure regarding Vidify to its followers, I&amp;rsquo;m very grateful for the support I&amp;rsquo;ve received. I haven&amp;rsquo;t been working on this lately; I&amp;rsquo;ve been with other projects and more stuff outside of programming so I had put Vidify aside for some time. I wanted to explain why in this article.
+The Issues I have some very big issues that I have to deal with before continuing, which have prevented me from working on Vidify further until now:</description>
+    </item>
+    
     <item>
       <title>Optional parameters in Rust</title>
       <link>https://vidify.org/blog/rust-parameters/</link>
