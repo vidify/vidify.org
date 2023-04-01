@@ -15,7 +15,7 @@
     
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 <title>The Audiosync extension – Vidify</title>
 
@@ -199,11 +199,11 @@
 </ul>
 <p>It&rsquo;s also available as <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> on the AUR, and it comes pre-installed in the binaries.</p>
 <p>It can be activated with <code>--audiosync</code>, or inside your <a href="https://github.com/vidify/vidify#the-config-file">config file</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
-<span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
-</code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[Defaults]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</span></span></code></pre></div><p>You can calibrate the audiosync results with the option <code>--audiosync-calibration</code> or <code>audiosync_calibration</code>. By default it&rsquo;s 0 milliseconds, but it may depend on your hardware.</p>
 <p><em>Note: if when using audiosync there&rsquo;s no sound, you might need to disable stream target device restore by editing the corresponing line in <code>/etc/pulse/default.pa</code> to <code>load-module module-stream-restore restore_device=false</code>.</em></p>
-<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing (your headphones or speaker). Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;'):</em></p>
+<p><em>Note 2: you should make sure that the sink being recorded is either <code>audiosync</code>, or the one where the music is playing (your headphones or speaker). Here&rsquo;s an example on Pavucontrol (it&rsquo;s usually called &lsquo;Monitor of &hellip;&rsquo;):</em></p>
 <p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
 
 

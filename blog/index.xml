@@ -6,7 +6,17 @@
     <description>Recent content in The latest updates on Vidify</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 15 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The End of an Open Source Journey: Archiving Vidify</title>
+      <link>https://vidify.org/blog/archived/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://vidify.org/blog/archived/</guid>
+      <description>Vidify was one of my first big software engineering projects, and I invested a tremendous amount of effort into its development. Supporting multiple platforms, building an audio synchronization extension, communicating between devices through DNS-SD, and releasing a website and Discord server were just some of the many tasks which helped shape my growth as a software developer.
+The most rewarding part, however, was collaborating so closely with the open source community.</description>
+    </item>
+    
     <item>
       <title>The state of Vidify in 2021</title>
       <link>https://vidify.org/blog/202105-update/</link>

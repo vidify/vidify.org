@@ -15,7 +15,7 @@
     
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 <title>De Audiosync extensie – Vidify</title>
 
@@ -179,7 +179,7 @@
                             
                             
                             <span>op</span>
-                            <span>5 April 2020</span>
+                            <span>5 april 2020</span>
                             
                             <!-- Reading time, with support for different languages -->
                             
@@ -199,11 +199,11 @@
 </ul>
 <p>Het is ook beschikbaar als <a href="https://aur.archlinux.org/packages/vidify-audiosync"><code>vidify-audiosync</code></a> in de AUR en als <a href="https://gpo.zugaina.org/media-video/vidify-audiosync">media-video/vidify-audiosync</a> in de <a href="https://wiki.gentoo.org/wiki/Project:GURU">GURU overlay</a>.</p>
 <p>Deze functie wordt geactiveerd met het <code>--audiosync</code> argument, of in het <a href="https://github.com/vidify/vidify#the-config-file">config bestand</a>:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ini" data-lang="ini"><span style="color:#66d9ef">[Defaults]</span>
-<span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
-</code></pre></div><p>Je kunt de resultaten van audiosync kalibreren met de optie <code>--audiosync-calibration</code> of <code>audiosync_calibration</code>. Standaard is deze 0 milliseconden, maar dit is mogelijk afhankelijk van jouw hardware.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ini" data-lang="ini"><span style="display:flex;"><span><span style="color:#66d9ef">[Defaults]</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">audiosync</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">true</span>
+</span></span></code></pre></div><p>Je kunt de resultaten van audiosync kalibreren met de optie <code>--audiosync-calibration</code> of <code>audiosync_calibration</code>. Standaard is deze 0 milliseconden, maar dit is mogelijk afhankelijk van jouw hardware.</p>
 <p><em>Opmerking: als er geen geluid is, dan moet je misschien &lsquo;stream target device restore&rsquo; uitzetten door de corresponderende lijn in <code>/etc/pulse/default.pa</code> te veranderen naar <code>load-module module-stream-restore restore_device=false</code>.</em></p>
-<p><em>Opmerking 2: bevestig dat de sink waarvan wordt opgenomen <code>audiosync</code> is, of de sink waar de muziek op afspeelt. Hier is een voorbeeld in Pavucontrol (Meestal heet dit &lsquo;Monitor of &hellip;'):</em></p>
+<p><em>Opmerking 2: bevestig dat de sink waarvan wordt opgenomen <code>audiosync</code> is, of de sink waar de muziek op afspeelt. Hier is een voorbeeld in Pavucontrol (Meestal heet dit &lsquo;Monitor of &hellip;&rsquo;):</em></p>
 <p><img src="/images/wiki/pavucontrol-audiosync.png" alt="pavucontrol"></p>
 
 

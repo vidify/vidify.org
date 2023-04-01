@@ -24,7 +24,7 @@ Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;r
       
       <guid>https://vidify.org/wiki/linux-media-players/</guid>
       <description>This is the most recommended API for Linux users. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
-  PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python3-gobject or pygobject).</description>
+PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python3-gobject or pygobject).</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@ Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;r
       
       <guid>https://vidify.org/wiki/spotify-for-windows-and-macos/</guid>
       <description>This is the default API for Windows and Mac OS users. You don&amp;rsquo;t have to install anything, since it&amp;rsquo;s already installed by default on these platforms.
-Current limitations  The library used to access information from the Spotify API is unable to obtain its position. Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information.  </description>
+Current limitations The library used to access information from the Spotify API is unable to obtain its position. Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information. </description>
     </item>
     
     <item>
@@ -44,7 +44,7 @@ Current limitations  The library used to access information from the Spotify API
       
       <guid>https://vidify.org/wiki/spotify-web-api/</guid>
       <description>All the supported platforms have a way to obtain song data from the desktop Spotify app, but it may not be as reliable as the official web API, or may lack features in comparison to it. For example, with the Spotify Web API, you can control the music on other devices other than where Vidify is running. However, it also brings other downsides:
- You have to sign in and set it up manually (only once though) Only Spotify Premium users are able to use some functions API calls are limited More internet usage is needed to continuously communicate with Spotify  The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time.</description>
+You have to sign in and set it up manually (only once though) Only Spotify Premium users are able to use some functions API calls are limited More internet usage is needed to continuously communicate with Spotify The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time.</description>
     </item>
     
     <item>

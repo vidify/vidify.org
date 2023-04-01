@@ -15,7 +15,7 @@
     
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 <title>FAQ – Vidify</title>
 
@@ -179,7 +179,7 @@
                             
                             
                             <span>op</span>
-                            <span>5 April 2020</span>
+                            <span>5 april 2020</span>
                             
                             <!-- Reading time, with support for different languages -->
                             
@@ -194,8 +194,8 @@
 <p>PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. <code>TypeError: 'Shiboken.ObjectType' object is not iterable</code> is de foutmelding die je anders zult zien.</p>
 <h3 id="modulenotfounderror-no-module-named-gi-when-using-a-virtual-environment"><code>ModuleNotFoundError: No module named 'gi'</code> when using a virtual environment</h3>
 <p><code>python-gobject</code> is niet altijd beschikbaar in een virtuele omgeving. Om hier omheen te werken kun je een symlink maken met:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ln -s <span style="color:#e6db74">&#34;/usr/lib/python3.8/site-packages/gi&#34;</span> <span style="color:#e6db74">&#34;</span>$venv_dir<span style="color:#e6db74">/lib/python3.8/site-packages&#34;</span>
-</code></pre></div><p>of installeer dit met pip volgens <a href="https://pygobject.readthedocs.io/en/latest/getting_started.html">deze handleiding</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ln -s <span style="color:#e6db74">&#34;/usr/lib/python3.8/site-packages/gi&#34;</span> <span style="color:#e6db74">&#34;</span>$venv_dir<span style="color:#e6db74">/lib/python3.8/site-packages&#34;</span>
+</span></span></code></pre></div><p>of installeer dit met pip volgens <a href="https://pygobject.readthedocs.io/en/latest/getting_started.html">deze handleiding</a>.</p>
 <h3 id="vidify-herkent-sommige-gedownloade-nummers-niet">Vidify herkent sommige gedownloade nummers niet</h3>
 <p>Als het nummer geen metadata veld heeft met titel en artiest (waarvan artiest optioneel is), dan kan Vidify niet weten welk nummer er afspeelt. Probeer de relevante metadata aan deze gedownloade nummers toe te voegen met VLC of een ander programma.</p>
 <h3 id="filenotfounderror-could-not-find-module-libvlcdll"><code>FileNotFoundError: Could not find module 'libvlc.dll'.</code></h3>

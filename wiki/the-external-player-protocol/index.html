@@ -13,7 +13,7 @@
     
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 <title>The external player protocol – Vidify</title>
 
@@ -188,32 +188,32 @@
 <p>To connect the devices, a <a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD">DNS-based Service Discovery (DNS-SD)</a> mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</p>
 <p>This protocol requires defining a service name and a service type. They will always be <code>vidify - xxxx</code>, and <code>_vidify._tcp.</code>, respectively. The service name can include a brief description about the device (<code>xxxx</code>), but must always have an identifiable keyword (<code>vidify</code>).</p>
 <p>The DNS-SD registration will also include the following details about the Vidify server in its metadata:</p>
-<pre><code>id: &quot;vidify&quot;
-version: &quot;X.Y.Z&quot;
-os: &quot;LINUX&quot;, &quot;WINDOWS&quot;, &quot;MACOS&quot; or &quot;BSD&quot;
-api: &quot;MPRIS_LINUX&quot;, &quot;SPOTIFY_WEB&quot;...
+<pre tabindex="0"><code>id: &#34;vidify&#34;
+version: &#34;X.Y.Z&#34;
+os: &#34;LINUX&#34;, &#34;WINDOWS&#34;, &#34;MACOS&#34; or &#34;BSD&#34;
+api: &#34;MPRIS_LINUX&#34;, &#34;SPOTIFY_WEB&#34;...
 </code></pre><p>The provided version name should be checked inside the implementation in order to make sure that the connection is compatible. For example, Vidify 2.3.0 may not be compatible with your latest implementation version, so you shouldn&rsquo;t try to connect to it in the first place.</p>
 <p>The Vidify server is able to handle multiple connections at once, so you should take that in mind when developing your implementation.</p>
 <p>The protocol communication is based on JSON messages with UTF-8 encoding.</p>
 <h2 id="connection-acknowledgement">Connection acknowledgement</h2>
 <p>To establish a connection between a Vidify server and an app, there must first take place a confirmation. The app will send its own ID, along with some additional data, in order to make sure that both are compatible. This is currently not used inside Vidify&rsquo;s external player, but it&rsquo;s still required for future features.</p>
 <p>These are the defined fields for the initial message:</p>
-<pre><code>{
-    'id': 'com.glowapps.vidify',
-    'version': '0.3.2'  # optional
+<pre tabindex="0"><code>{
+    &#39;id&#39;: &#39;com.glowapps.vidify&#39;,
+    &#39;version&#39;: &#39;0.3.2&#39;  # optional
 }
 </code></pre><p>The ID, should be unique to avoid collisions with other implementations. The server will reply with the following structure:</p>
-<pre><code>{
-    'success': false,
-    'error_msg': 'The version 0.2.3 is incompatible ...'  # optional
+<pre tabindex="0"><code>{
+    &#39;success&#39;: false,
+    &#39;error_msg&#39;: &#39;The version 0.2.3 is incompatible ...&#39;  # optional
 }
 </code></pre><h2 id="communication">Communication</h2>
 <p>Once the connection has been established successfully, the client doesn&rsquo;t need to send any other messages. The Vidify server will notify all its connected clients of updates in the music video metadata with these fields:</p>
-<pre><code>{
-    'url': 'https://youtube.com/...',
-    'relative_pos': -1200,  # optional
-    'absolute_pos': 4000,  # optional
-    'is_playing': true  # optional
+<pre tabindex="0"><code>{
+    &#39;url&#39;: &#39;https://youtube.com/...&#39;,
+    &#39;relative_pos&#39;: -1200,  # optional
+    &#39;absolute_pos&#39;: 4000,  # optional
+    &#39;is_playing&#39;: true  # optional
 }
 </code></pre><p><code>url</code> is a mandatory field that indicates in respect to what video the update is being sent. The client will compare it to the currently playing video. If it&rsquo;s the same, it will just update its metadata. Otherwise, a new video will start playing with the indicated properties.</p>
 <p>The position field can be indicated as relative or absolute to the current status to the video. If both are provided, the absolute position has priority over the relative.</p>

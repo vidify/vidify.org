@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html class="no-js" lang="zh-cn"><head>
+<html class="no-js" lang="en-us"><head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="description" content="Vidify - 在任何地方播放现场音乐视频">
-<meta name="keywords" content="音乐视频，广播，现实生活，Spotify，Android，电视，Windows，Linux，macOS，电视">
+<meta name="description" content="Vidify - Officially announcing the end of my development on Vidify, with some last words about the project and what it meant to me.">
+<meta name="keywords" content="music videos, broadcast, live, real time, spotify, android, TV, windows, linux, mac os, television">
  <meta name="author" content="map[email:marioortizmanero@gmail.com github:https://github.com/marioortizmanero image:images/author.jpg linkedin:https://www.linkedin.com/in/mario-ortiz-manero-3b0472186/ name:Mario Ortiz Manero]">
 
-
-        <link rel="alternate" hreflang="en" href="/wiki/linux-media-players/" title="">
-    
-        <link rel="alternate" hreflang="es" href="/es/wiki/linux-media-players/" title="">
-    
-        <link rel="alternate" hreflang="nl" href="/nl/wiki/linux-media-players/" title="">
-    
 
 
 <meta name="generator" content="Hugo 0.111.3">
 
-<title> – Vidify</title>
+<title>The End of an Open Source Journey: Archiving Vidify – Vidify</title>
 
 <!-- Mobile Specific Meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -57,7 +50,7 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-md">
-                    <a class="navbar-brand" href="https://vidify.org/cn/">
+                    <a class="navbar-brand" href="https://vidify.org/">
                         <img src="https://vidify.org/images/logo.png" alt="Vidify">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -73,31 +66,31 @@
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/cn/" >主页</a>
+                                <a class="nav-link" href="https://vidify.org/" >Home</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/cn/wiki" >Wiki</a>
+                                <a class="nav-link" href="https://vidify.org/wiki" >Wiki</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/cn/blog" >博客</a>
+                                <a class="nav-link" href="https://vidify.org/blog" >Blog</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://vidify.org/cn/contact" >联系</a>
+                                <a class="nav-link" href="https://vidify.org/contact" >Contact</a>
                             </li>
                             
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="https://github.com/vidify" target='_blank' rel="noreferrer">Github</a>
+                                <a class="nav-link" href="https://github.com/vidify" target='_blank' rel="noreferrer">GitHub</a>
                             </li>
                             
                             
@@ -105,14 +98,14 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
-                                    语言
+                                    Language
                                 </a>
                                 <div class="dropdown-menu">
                                     
                                         
 
-    <a href="https://vidify.org/cn" class="dropdown-item selected">
-    
+    <a href="https://vidify.org/cn" class="dropdown-item">
+
 <span class="lang-code">cn</span>
 <span class="lang-name">简体中文</span>
 </a>
@@ -120,8 +113,8 @@
                                     
                                         
 
-    <a href="https://vidify.org/en" class="dropdown-item">
-
+    <a href="https://vidify.org/en" class="dropdown-item selected">
+    
 <span class="lang-code">en</span>
 <span class="lang-name">English</span>
 </a>
@@ -162,35 +155,109 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
                 
-                <a href="https://vidify.org/cn/wiki">
+                <a href="https://vidify.org/blog">
                     <i class="tf-ion-android-arrow-back"></i>
                     <span>GO BACK</span>
                 </a>
-                <h2></h2>
+                <h2>The End of an Open Source Journey: Archiving Vidify</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         
+                        <p>Officially announcing the end of my development on Vidify, with some last words about the project and what it meant to me.</p>
+                        
                         <li class="list-inline-item">
                             
+                            <span>By</span>
+                            <span>Mario Ortiz Manero</span>
+                            
+                            
+                            <span>at</span>
+                            <span>April 1, 2023</span>
                             
                             <!-- Reading time, with support for different languages -->
                             
                             
-                            <span>, 1</span>
+                            <span>, 3 minutes read</span>
                         </li>
                     </ul>
                 </div>
-                <p>待翻译中</p>
+                <p>Vidify was one of my first big software engineering projects, and I invested a
+tremendous amount of effort into its development. Supporting <a href="https://vidify.org/wiki/">multiple
+platforms</a>, building an <a href="https://vidify.org/wiki/audiosync-extension/">audio synchronization
+extension</a>, communicating between
+devices through <a href="https://vidify.org/wiki/the-external-player-protocol/">DNS-SD</a>,
+and releasing a website and Discord server were just some of the many tasks
+which helped shape my growth as a software developer.</p>
+<p>The most rewarding part, however, was collaborating so closely with the open
+source community. I was able to influence the design of new libraries, such as
+<a href="https://github.com/felix-hilden/tekore">Tekore</a>, and improve existing ones,
+like <a href="https://github.com/ramsayleung/rspotify">RSpotify</a>. Moreover, Vidify
+received a ton of help from contributors, including translating it to
+<a href="https://github.com/vidify/vidify.org-source/pull/30">Chinese</a> or
+<a href="https://github.com/vidify/vidify/issues/73">Dutch</a>, adding <a href="https://github.com/vidify/vidify/pull/118">new video
+players</a>, <a href="https://github.com/vidify/vidify/pull/67">uploading it to
+Gentoo</a>, or reporting and fixing all
+sort of issues. This experience is probably what led me to eventually love open
+source work.</p>
+<p>Unfortunately, I have been neglecting Vidify for some time because of some
+fundamental challenges, as I introduced in <a href="https://vidify.org/blog/202105-update/">this
+article</a>. Our main dependency,
+<code>youtube-dl</code>, was <a href="https://github.blog/2020-11-16-standing-up-for-developers-youtube-dl-is-back/">temporarily taken
+down</a>,
+and Spotify rejected API access due to <a href="https://github.com/vidify/vidify/issues/166">ToS
+violations</a>, among other issues.
+Additionally, it has become harder for me to keep up with side projects; I am
+now focusing on other aspects of life after recently relocating to a different
+country to work for Lyft. While I believe Vidify could take off, it would
+require a completely different approach and much greater scale, which is not
+feasible for me in the near term.</p>
+<p>The last commit on the desktop application was merged on December 2021, but
+there had already been no active development on it since the end of 2020. We&rsquo;re
+now in 2023, and rather than keeping the status of the project uncertain, I
+would like to announce that I&rsquo;m officially archiving all the repositories
+related to Vidify:</p>
+<ul>
+<li><a href="https://github.com/vidify/vidify">vidify/vidify</a></li>
+<li><a href="https://github.com/vidify/vidify.org">vidify/vidify.org</a></li>
+<li><a href="https://github.com/vidify/vidify.org-source">vidify/vidify.org-source</a></li>
+<li><a href="https://github.com/marioortizmanero/structconf">marioortizmanero/structconf</a></li>
+</ul>
+<p>The repository for audio synchronization remains archived:</p>
+<ul>
+<li><a href="https://github.com/vidify/old-audiosync">vidify/old-audiosync</a></li>
+</ul>
+<p>And I&rsquo;m releasing some parts of the project that I had kept private so far, most
+importantly the Vidify TV application for Android:</p>
+<ul>
+<li><a href="https://github.com/vidify/vidify-tv">vidify/vidify-tv</a></li>
+<li><a href="https://github.com/vidify/vidify-cpp">vidify/vidify-cpp</a></li>
+<li><a href="https://github.com/vidify/vidify-rs">vidify/vidify-rs</a></li>
+</ul>
+<p>The final two repositories are unfinished attempts at rewriting the desktop
+application to various languages. This is usually a terrible idea, but as I
+mentioned, Vidify was part of my learning process in this field, and I have no
+regrets :)</p>
+<p>It has definitely taken me more time than necessary to do this, because it
+saddens me to abandon a project I had been so passionate about. But I know that
+the beauty of open source development lies in its ability to benefit others even
+after its original creator has moved on. By archiving the project instead of
+deleting it, anyone can continue to learn from its software and my accompanying
+articles, or even take on its development independently.</p>
+<p>If you have any questions or plan to fork Vidify, feel free to reach out to me
+through the links in my personal website,
+<a href="https://nullderef.com/">nullderef.com</a>.</p>
+<p>Thanks to everyone who made this possible ❤️,<br>
+Mario</p>
 
 
                 
 
 
 <div class="sharing">
-    <p>分享这篇文章到...</p>
+    <p>Share this post on...</p>
     <div class="sharing-buttons">
         
-        <a class="sharing-button-link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fvidify.org%2fcn%2fwiki%2flinux-media-players%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fvidify.org%2fblog%2farchived%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-facebook sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-facebook"></i>
             </div>
@@ -198,7 +265,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="https://twitter.com/intent/tweet/?text=Vidify%20-%20%25%21s%28%3cnil%3e%29&url=https%3a%2f%2fvidify.org%2fcn%2fwiki%2flinux-media-players%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://twitter.com/intent/tweet/?text=Vidify%20-%20The%20End%20of%20an%20Open%20Source%20Journey%3a%20Archiving%20Vidify&url=https%3a%2f%2fvidify.org%2fblog%2farchived%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-twitter sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-twitter"></i>
             </div>
@@ -206,7 +273,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="whatsapp://send?text=Vidify%20-%20%25%21s%28%3cnil%3e%29 https%3a%2f%2fvidify.org%2fcn%2fwiki%2flinux-media-players%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="whatsapp://send?text=Vidify%20-%20The%20End%20of%20an%20Open%20Source%20Journey%3a%20Archiving%20Vidify https%3a%2f%2fvidify.org%2fblog%2farchived%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-whatsapp sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-social-whatsapp"></i>
             </div>
@@ -214,7 +281,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="https://telegram.me/share/url?text=Vidify%20-%20%25%21s%28%3cnil%3e%29&url=https%3a%2f%2fvidify.org%2fcn%2fwiki%2flinux-media-players%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="https://telegram.me/share/url?text=Vidify%20-%20The%20End%20of%20an%20Open%20Source%20Journey%3a%20Archiving%20Vidify&url=https%3a%2f%2fvidify.org%2fblog%2farchived%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-telegram sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-paper-airplane"></i>
             </div>
@@ -222,7 +289,7 @@
         </a>
 
         
-        <a class="sharing-button-link" href="mailto:?subject=Vidify%20-%20%25%21s%28%3cnil%3e%29&body=https%3a%2f%2fvidify.org%2fcn%2fwiki%2flinux-media-players%2f" target="_blank" rel="noopener" aria-label="">
+        <a class="sharing-button-link" href="mailto:?subject=Vidify%20-%20The%20End%20of%20an%20Open%20Source%20Journey%3a%20Archiving%20Vidify&body=https%3a%2f%2fvidify.org%2fblog%2farchived%2f" target="_blank" rel="noopener" aria-label="">
           <div class="sharing-button sharing-button-email sharing-button-small"><div aria-hidden="true" class="sharing-button-icon sharing-button-icon--solid">
               <i class="tf-ion-email"></i>
             </div>
@@ -243,8 +310,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>关于</h3>
-                    <p>Vidify 是一个核心的开源项目，任何人可以在 <a href="https://github.com/vidify">GitHub</a> 上贡献以及完善它。它正在积极开发中，经常发布新的修复和功能，不要忘记保持更新！</p>
+                    <h3>About</h3>
+                    <p>Vidify is an open source project at its core. Anyone can contribute and improve it on <a href="https://github.com/vidify">GitHub</a>. It&rsquo;s under active development, releasing new fixes and features frequently. Don&rsquo;t forget to stay updated.</p>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
                     <h3>GitHub</h3>
@@ -255,7 +322,7 @@
                         </li>
                         
                         <li>
-                            <a href="https://github.com/vidify/audiosync" target="_blank" rel="noreferrer">音频同步</a>
+                            <a href="https://github.com/vidify/audiosync" target="_blank" rel="noreferrer">Audiosync</a>
                         </li>
                         
                         <li>
@@ -265,15 +332,15 @@
                     </ul>
                 </div>
                 <div class="col-sm-6 col-md-4 col-xs-12">
-                    <h3>快速访问</h3>
+                    <h3>Quicklinks</h3>
                     <ul>
                         
                         <li>
-                            <a href="https://vidify.org/cn/wiki/">如何开始</a>
+                            <a href="https://vidify.org/wiki/">Getting Started</a>
                         </li>
                         
                         <li>
-                            <a href="https://vidify.org/cn/wiki/faq/">问答</a>
+                            <a href="https://vidify.org/wiki/faq/">FAQ&#39;s</a>
                         </li>
                         
                     </ul>

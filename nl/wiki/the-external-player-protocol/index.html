@@ -13,7 +13,7 @@
     
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.111.3">
 
 <title>Het externe speler protocol – Vidify</title>
 
@@ -188,32 +188,32 @@
 <p>Om met apparaten te verbinden wordt gebruik gemaakt van een <a href="https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD">DNS-based Service Discovery (DNS-SD)</a>. De Vidify server registreert zichzelf op het netwerk, en iedereen daarin kan daarmee verbinden.</p>
 <p>Dit protocol vereist dat er een service naam en service type wordt gedefineert. Deze zullen altijd respectievelijk <code>vidify - xxxx</code>, en <code>_vidify._tcp.</code> zijn. De service naam kan een korte beschrijving bevatten (<code>xxxx</code>), maar moet altijd het identificatie zoekwoord (<code>vidify</code>) hebben.</p>
 <p>De DNS-SD registratie zal ook de volgende details bevatten over de Vidify server en de metadata daarvan:</p>
-<pre><code>id: &quot;vidify&quot;
-version: &quot;X.Y.Z&quot;
-os: &quot;LINUX&quot;, &quot;WINDOWS&quot;, &quot;MACOS&quot; or &quot;BSD&quot;
-api: &quot;MPRIS_LINUX&quot;, &quot;SPOTIFY_WEB&quot;...
+<pre tabindex="0"><code>id: &#34;vidify&#34;
+version: &#34;X.Y.Z&#34;
+os: &#34;LINUX&#34;, &#34;WINDOWS&#34;, &#34;MACOS&#34; or &#34;BSD&#34;
+api: &#34;MPRIS_LINUX&#34;, &#34;SPOTIFY_WEB&#34;...
 </code></pre><p>Het versie nummer dient gecontroleerd te worden in de implementatie om te verifiëren dat de verbinding compatibel is. Vidify 2.3.0 hoeft bijvoorbeeld helemaal niet compatibel te zijn met de recentste versie van jouw implementatie, probeer deze verbinding dan ook niet te initialiseren.</p>
 <p>De Vidify server kan meerder verbindingen tegelijk ondersteunen, let hierop wanneer je jouw implementatie ontwikkeld.</p>
 <p>Het communicatie protocol is gebaseerd op JSON berichten met UTF-8 codering.</p>
 <h2 id="verbinding-bevestiging">Verbinding bevestiging</h2>
 <p>Om een verbinding op te zetten tussen de Vidify server en de app, dient er eerst bevestiging plaats te vinden. De app stuurt zijn eigen ID en andere data, om ervoor te zorgen dat deze beiden compatibel zijn. Dit wordt op het moment niet gebruikt in Vidify, maar is wel vereist met het oog op toekomstige functies.</p>
 <p>Deze velden zijn gedefinieerd voor het eerste bericht:</p>
-<pre><code>{
-    'id': 'com.glowapps.vidify',
-    'version': '0.3.2'  # optional
+<pre tabindex="0"><code>{
+    &#39;id&#39;: &#39;com.glowapps.vidify&#39;,
+    &#39;version&#39;: &#39;0.3.2&#39;  # optional
 }
 </code></pre><p>Het ID dient uniek te zijn om conflicten te voorkomen met andere implementaties. De server antwoord als volgt:</p>
-<pre><code>{
-    'success': false,
-    'error_msg': 'The version 0.2.3 is incompatible ...'  # optional
+<pre tabindex="0"><code>{
+    &#39;success&#39;: false,
+    &#39;error_msg&#39;: &#39;The version 0.2.3 is incompatible ...&#39;  # optional
 }
 </code></pre><h2 id="communicatie">Communicatie</h2>
 <p>Wanneer er succesvol verbinding is gemaakt hoeft de client geen verdere berichten te versturen. De Vidify server voorziet alle verbonden clients van updates in de metadata van de afspelende muziek in het volgende formaat:</p>
-<pre><code>{
-    'url': 'https://youtube.com/...',
-    'relative_pos': -1200,  # optional
-    'absolute_pos': 4000,  # optional
-    'is_playing': true  # optional
+<pre tabindex="0"><code>{
+    &#39;url&#39;: &#39;https://youtube.com/...&#39;,
+    &#39;relative_pos&#39;: -1200,  # optional
+    &#39;absolute_pos&#39;: 4000,  # optional
+    &#39;is_playing&#39;: true  # optional
 }
 </code></pre><p><code>url</code> is een verplicht veld dat de representeert bij welke video de updates horen. De client vergelijkt deze met de video die op dit moment afspeelt. Is deze hetzelfde, dan wordt allen de metadata aangepast. Anders wordt er ook een nieuwe video gestart met de aangegeven eigenschappen.</p>
 <p>Het positie veld kan verwijzen naar een absolute of relatieve positie in de video. Als deze beide zijn gespecificeerd dan heeft het de absolute prioriteit over de relatieve positie.</p>
