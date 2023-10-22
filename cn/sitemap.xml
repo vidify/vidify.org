@@ -6,17 +6,17 @@
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/blog/discord/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/blog/discord/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/blog/discord/"
                 />
   </url><url>
@@ -24,22 +24,22 @@
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/"
                 />
   </url><url>
@@ -47,22 +47,22 @@
     <lastmod>2020-09-25T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/blog/"
                 />
   </url><url>
@@ -70,244 +70,237 @@
     <lastmod>2020-04-02T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/blog/launch/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/blog/launch/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/blog/launch/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/blog/launch/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/audiosync-extension/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/audiosync-extension/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/audiosync-extension/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/audiosync-extension/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/audiosync-extension/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/faq/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/faq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/faq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/faq/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/faq/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/linux-media-players/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/linux-media-players/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/linux-media-players/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/linux-media-players/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/linux-media-players/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/spotify-for-windows-and-macos/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/spotify-for-windows-and-macos/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/spotify-for-windows-and-macos/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/spotify-for-windows-and-macos/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/spotify-for-windows-and-macos/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/spotify-web-api/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/spotify-web-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/wiki/spotify-web-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/spotify-web-api/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/spotify-web-api/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/wiki/the-external-player-protocol/</loc>
-    <priority>0</priority>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/wiki/the-external-player-protocol/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/wiki/the-external-player-protocol/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/wiki/the-external-player-protocol/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/categories/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/tags/"
                 />
   </url><url>
     <loc>https://vidify.org/cn/contact/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
+                hreflang="en-us"
                 href="https://vidify.org/contact/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
+                hreflang="es-es"
                 href="https://vidify.org/es/contact/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="nl"
+                hreflang="nl-nl"
                 href="https://vidify.org/nl/contact/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="cn"
+                hreflang="zh-cn"
                 href="https://vidify.org/cn/contact/"
                 />
   </url>
