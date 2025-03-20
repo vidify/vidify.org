@@ -4,61 +4,46 @@
     <title>The latest updates on Vidify</title>
     <link>https://vidify.org/blog/</link>
     <description>Recent content in The latest updates on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <lastBuildDate>Sat, 01 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vidify.org/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The End of an Open Source Journey: Archiving Vidify</title>
       <link>https://vidify.org/blog/archived/</link>
-      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/blog/archived/</guid>
-      <description>Vidify was one of my first big software engineering projects, and I invested a tremendous amount of effort into its development. Supporting multiple platforms, building an audio synchronization extension, communicating between devices through DNS-SD, and releasing a website and Discord server were just some of the many tasks which helped shape my growth as a software developer.
-The most rewarding part, however, was collaborating so closely with the open source community.</description>
+      <description>&lt;p&gt;Vidify was one of my first big software engineering projects, and I invested a&#xA;tremendous amount of effort into its development. Supporting &lt;a href=&#34;https://vidify.org/wiki/&#34;&gt;multiple&#xA;platforms&lt;/a&gt;, building an &lt;a href=&#34;https://vidify.org/wiki/audiosync-extension/&#34;&gt;audio synchronization&#xA;extension&lt;/a&gt;, communicating between&#xA;devices through &lt;a href=&#34;https://vidify.org/wiki/the-external-player-protocol/&#34;&gt;DNS-SD&lt;/a&gt;,&#xA;and releasing a website and Discord server were just some of the many tasks&#xA;which helped shape my growth as a software developer.&lt;/p&gt;&#xA;&lt;p&gt;The most rewarding part, however, was collaborating so closely with the open&#xA;source community. I was able to influence the design of new libraries, such as&#xA;&lt;a href=&#34;https://github.com/felix-hilden/tekore&#34;&gt;Tekore&lt;/a&gt;, and improve existing ones,&#xA;like &lt;a href=&#34;https://github.com/ramsayleung/rspotify&#34;&gt;RSpotify&lt;/a&gt;. Moreover, Vidify&#xA;received a ton of help from contributors, including translating it to&#xA;&lt;a href=&#34;https://github.com/vidify/vidify.org-source/pull/30&#34;&gt;Chinese&lt;/a&gt; or&#xA;&lt;a href=&#34;https://github.com/vidify/vidify/issues/73&#34;&gt;Dutch&lt;/a&gt;, adding &lt;a href=&#34;https://github.com/vidify/vidify/pull/118&#34;&gt;new video&#xA;players&lt;/a&gt;, &lt;a href=&#34;https://github.com/vidify/vidify/pull/67&#34;&gt;uploading it to&#xA;Gentoo&lt;/a&gt;, or reporting and fixing all&#xA;sort of issues. This experience is probably what led me to eventually love open&#xA;source work.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The state of Vidify in 2021</title>
       <link>https://vidify.org/blog/202105-update/</link>
-      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sat, 15 May 2021 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/blog/202105-update/</guid>
-      <description>I wanted to give some closure regarding Vidify to its followers, I&amp;rsquo;m very grateful for the support I&amp;rsquo;ve received. I haven&amp;rsquo;t been working on this lately; I&amp;rsquo;ve been with other projects and more stuff outside of programming so I had put Vidify aside for some time. I wanted to explain why in this article.
-The Issues I have some very big issues that I have to deal with before continuing, which have prevented me from working on Vidify further until now:</description>
+      <description>&lt;p&gt;I wanted to give some closure regarding Vidify to its followers, I&amp;rsquo;m very&#xA;grateful for the support I&amp;rsquo;ve received. I haven&amp;rsquo;t been working on this lately;&#xA;I&amp;rsquo;ve been with other projects and more stuff outside of programming so I had put&#xA;Vidify aside for some time. I wanted to explain &lt;em&gt;why&lt;/em&gt; in this article.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-issues&#34;&gt;The Issues&lt;/h2&gt;&#xA;&lt;p&gt;I have some very big issues that I have to deal with before continuing, which&#xA;have prevented me from working on Vidify further until now:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Optional parameters in Rust</title>
       <link>https://vidify.org/blog/rust-parameters/</link>
-      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sat, 10 Oct 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/blog/rust-parameters/</guid>
-      <description>Disclaimer: I will now be posting these kind of posts at my personal blog: https://nullderef.com/blog/rust-parameters/
-Optional or default parameters are a very interesting feature of some languages that Rust specifically doesn&amp;rsquo;t cover (and looks like it won&amp;rsquo;t anytime soon ). Say your library has lots of endpoints like so:
-fn endpoint&amp;lt;T1, T2, T3, ...&amp;gt;(mandatory: T1, opt1: Option&amp;lt;T2&amp;gt;, opt2: Option&amp;lt;T3&amp;gt;, ...); In this case, when you call endpoint, you have to use endpoint(mandatory, None, None, .</description>
+      <description>&lt;p&gt;&lt;em&gt;Disclaimer: I will now be posting these kind of posts at my personal blog:&#xA;&lt;a href=&#34;https://nullderef.com/blog/rust-parameters/&#34;&gt;https://nullderef.com/blog/rust-parameters/&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Optional or default parameters are a very interesting feature of some languages&#xA;that Rust specifically doesn&amp;rsquo;t cover (and looks like it won&amp;rsquo;t &lt;a href=&#34;https://github.com/rust-lang/rfcs/pull/2964&#34;&gt;anytime soon&#xA;&lt;/a&gt;). Say your library has lots of&#xA;endpoints like so:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-rust&#34; data-lang=&#34;rust&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;fn&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;endpoint&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;T1, T2, T3, &lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;(mandatory: &lt;span style=&#34;color:#a6e22e&#34;&gt;T1&lt;/span&gt;, opt1: Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;T2&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;, opt2: Option&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;T3&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;, &lt;span style=&#34;color:#f92672&#34;&gt;..&lt;/span&gt;.);&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In this case, when you call &lt;code&gt;endpoint&lt;/code&gt;, you have to use &lt;code&gt;endpoint(mandatory, None, None, ...)&lt;/code&gt;, or &lt;code&gt;endpoint(mandatory, Some(val1), Some(val2), ...)&lt;/code&gt;,&#xA;instead of the more intuitive &lt;code&gt;endpoint(mandatory)&lt;/code&gt; or &lt;code&gt;endpoint(mandatory, val1, val2)&lt;/code&gt;. Other languages like Python have named arguments, which make&#xA;optional parameters natural and easier to read: &lt;code&gt;endpoint(mandatory, opt1=val1, opt2=val2)&lt;/code&gt;, while also allowing them to be written in any order.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Discord server</title>
       <link>https://vidify.org/blog/discord/</link>
-      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/blog/discord/</guid>
-      <description>I have created a Discord server for Vidify! You can join using this link. It&amp;rsquo;s meant for quick conversations outside of GitHub, for both depelopment and user reasons.
-I was initially going to use an open source alternative but decided to go for Discord because it&amp;rsquo;s the easiest. If you&amp;rsquo;d like to suggest any other platform please let me know.
-If you have experience with Discord servers I&amp;rsquo;d love to get some help as well, as I haven&amp;rsquo;t managed one before :)</description>
+      <description>&lt;p&gt;I have created a Discord server for Vidify! You can join &lt;a href=&#34;https://discord.gg/yfJSyPv&#34;&gt;using this link&lt;/a&gt;. It&amp;rsquo;s meant for quick conversations outside of GitHub, for both depelopment and user reasons.&lt;/p&gt;&#xA;&lt;p&gt;I was initially going to use an open source alternative but decided to go for Discord because it&amp;rsquo;s the easiest. If you&amp;rsquo;d like to suggest any other platform please let me know.&lt;/p&gt;&#xA;&lt;p&gt;If you have experience with Discord servers I&amp;rsquo;d love to get some help as well, as I haven&amp;rsquo;t managed one before :)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Website Launch</title>
       <link>https://vidify.org/blog/launch/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/blog/launch/</guid>
-      <description>I&amp;rsquo;m officially releasing Vidify&amp;rsquo;s website!
-This site is intended for non-developers, I&amp;rsquo;ll migrate part of the GitHub documentation here on how to use Vidify. The wiki is also better managed in here because multiple languages can be used easily, and anyone can still contribute by making a PR to vidify/vidify.org-source, which is better than wiki contributions.
-I still have to polish it a lot, but it&amp;rsquo;s ready to be public already.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m officially releasing Vidify&amp;rsquo;s website!&lt;/p&gt;&#xA;&lt;p&gt;This site is intended for non-developers, I&amp;rsquo;ll migrate part of the&#xA;&lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;GitHub&lt;/a&gt; documentation here on how to use&#xA;Vidify. The wiki is also better managed in here because multiple languages can&#xA;be used easily, and anyone can still contribute by making a PR to&#xA;&lt;a href=&#34;https://github.com/vidify/vidify.org-source&#34;&gt;vidify/vidify.org-source&lt;/a&gt;, which&#xA;is better than wiki contributions.&lt;/p&gt;&#xA;&lt;p&gt;I still have to polish it a lot, but it&amp;rsquo;s ready to be public already. If you&#xA;find any issues please let me know in an issue.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

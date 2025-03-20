@@ -4,29 +4,25 @@
     <title>Las últimas novedades on Vidify</title>
     <link>https://vidify.org/es/blog/</link>
     <description>Recent content in Las últimas novedades on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/es/blog/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vidify.org/es/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Servidor de Discord</title>
       <link>https://vidify.org/es/blog/discord/</link>
-      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/es/blog/discord/</guid>
-      <description>¡He creado un servidor de Discord para Vidify! Puedes unirte usando este link. El objetivo es poder tener conversaciones fuera de GitHub, bien para desarrolladores o para usuarios. Es un servidor inglés, así que te pedimos que intentes usar ese lenguaje para entendernos todos.
-En un principio iba a usar una alternativa open source pero opté por Discord por ser la opción más fácil. Si quieres sugerir otra plataforma por favor házmelo saber.</description>
+      <description>&lt;p&gt;¡He creado un servidor de Discord para Vidify! Puedes unirte &lt;a href=&#34;https://discord.gg/yfJSyPv&#34;&gt;usando este link&lt;/a&gt;. El objetivo es poder tener conversaciones fuera de GitHub, bien para desarrolladores o para usuarios. Es un servidor inglés, así que te pedimos que intentes usar ese lenguaje para entendernos todos.&lt;/p&gt;&#xA;&lt;p&gt;En un principio iba a usar una alternativa open source pero opté por Discord por ser la opción más fácil. Si quieres sugerir otra plataforma por favor házmelo saber.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Lanzamiento de la página web</title>
       <link>https://vidify.org/es/blog/launch/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/es/blog/launch/</guid>
-      <description>¡Oficialmente anuncio el lanzamiento de la página web de Vidify!
-Esta página web está destinada a los no desarrolladores de software. Migraré parte de la documentación de GitHub aquí sobre cómo usar Vidify. La wiki es más fácil de administrar porque se pueden usar múltiples lenguajes fácilmente, y cualquiera puede seguir contribuyendo haciendo un Pull Request a vidify/vidify.org-source, que es mejor que las contribuciones de wikis.
-Aún tengo que pulirla un montón, y estoy terminando aún la traducción a español, pero está lista para ser pública.</description>
+      <description>&lt;p&gt;¡Oficialmente anuncio el lanzamiento de la página web de Vidify!&lt;/p&gt;&#xA;&lt;p&gt;Esta página web está destinada a los no desarrolladores de software. Migraré parte de la documentación de &lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;GitHub&lt;/a&gt; aquí sobre cómo usar Vidify. La wiki es más fácil de administrar porque se pueden usar múltiples lenguajes fácilmente, y cualquiera puede seguir contribuyendo haciendo un Pull Request a &lt;a href=&#34;https://github.com/vidify/vidify.org-source&#34;&gt;vidify/vidify.org-source&lt;/a&gt;, que es mejor que las contribuciones de wikis.&lt;/p&gt;&#xA;&lt;p&gt;Aún tengo que pulirla un montón, y estoy terminando aún la traducción a español, pero está lista para ser pública. Si encuentras cualquier problema, por favor notifícamelo en un issue.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

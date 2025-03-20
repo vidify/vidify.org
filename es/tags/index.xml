@@ -4,7 +4,10 @@
     <title>Tags on Vidify</title>
     <link>https://vidify.org/es/tags/</link>
     <description>Recent content in Tags on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language><atom:link href="https://vidify.org/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>es-es</language>
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <atom:link href="https://vidify.org/es/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

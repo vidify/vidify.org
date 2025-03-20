@@ -4,79 +4,60 @@
     <title>Vidify</title>
     <link>https://vidify.org/nl/</link>
     <description>Recent content on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>nl-nl</language>
-    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/nl/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vidify.org/nl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>De Audiosync extensie</title>
       <link>https://vidify.org/nl/wiki/audiosync-extension/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/audiosync-extension/</guid>
-      <description>Je zal je realiseren dat sommige videos niet precies gesynchroniseerd zijn met de muziek. Dit is omdat de video&amp;rsquo;s worden afgespeeld van YouTube, en dit zijn vaak andere versies van hetzelfde nummer, met verschillende intro&amp;rsquo;s en uitro&amp;rsquo;s&amp;hellip; wat problemen oplevert met de timing. Dit is lastig om op te lossen, maar Vidify heeft desondanks een audio synchronisatie extensie die dit probeert.
-De gehele broncode is hier beschikbaar: vidify/audiosync. Het is nog niet volledig functioneel, en kan dus lastig in gebruik zijn.</description>
+      <description>&lt;p&gt;Je zal je realiseren dat sommige videos niet precies gesynchroniseerd zijn met de muziek. Dit is omdat de video&amp;rsquo;s worden afgespeeld van YouTube, en dit zijn vaak andere versies van hetzelfde nummer, met verschillende intro&amp;rsquo;s en uitro&amp;rsquo;s&amp;hellip; wat problemen oplevert met de timing. Dit is lastig om op te lossen, maar Vidify heeft desondanks een audio synchronisatie extensie die dit probeert.&lt;/p&gt;&#xA;&lt;p&gt;De gehele broncode is hier beschikbaar: &lt;a href=&#34;https://github.com/vidify/audiosync&#34;&gt;vidify/audiosync&lt;/a&gt;. Het is nog niet volledig functioneel, en kan dus lastig in gebruik zijn.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FAQ</title>
       <link>https://vidify.org/nl/wiki/faq/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/faq/</guid>
-      <description>Mijn favoriete muziekspeler is niet ondersteund door Vidify Er zijn vele verschillende muziekspelers, en we werken eraan om hier zoveel mogelijk van te ondersteunen. Laat dit ons weten, zodat we weten welke het meest populair zijn.
-Vidify werkt niet goed met Python 3.8 en PySide2 PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. TypeError: &#39;Shiboken.</description>
+      <description>&lt;h3 id=&#34;mijn-favoriete-muziekspeler-is-niet-ondersteund-door-vidify&#34;&gt;Mijn favoriete muziekspeler is niet ondersteund door Vidify&lt;/h3&gt;&#xA;&lt;p&gt;Er zijn vele verschillende muziekspelers, en we werken eraan om hier zoveel mogelijk van te ondersteunen. &lt;a href=&#34;https://github.com/vidify/vidify/issues/new&#34;&gt;Laat dit ons weten&lt;/a&gt;, zodat we weten welke het meest populair zijn.&lt;/p&gt;&#xA;&lt;h3 id=&#34;vidify-werkt-niet-goed-met-python-38-en-pyside2&#34;&gt;Vidify werkt niet goed met Python 3.8 en PySide2&lt;/h3&gt;&#xA;&lt;p&gt;PySide2 heeft pas Python 3.8 ondersteuning vanaf versie 5.14. Zorg er dus voor dat je minimaal deze versie gebruikt en probeer het nog een keer. &lt;code&gt;TypeError: &#39;Shiboken.ObjectType&#39; object is not iterable&lt;/code&gt; is de foutmelding die je anders zult zien.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Linux Mediaspelers</title>
       <link>https://vidify.org/nl/wiki/linux-media-players/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/linux-media-players/</guid>
-      <description>Dit is de standaard API die momenteel in de app gebruikt wordt. Deze API haalt informatie op van een MPRIS compatibele media speler (MPRIS is een standaard interface ondersteund door vrijwel alle media spelers op Linux). Alles wat je nodig hebt zijn de volgende libraries, deze zijn waarschijnlijk al op je systeem geïnstalleerd:
-PyGI (niet beschikbaar op PyPi, installeer deze vanuit je distributie repository - meestal is deze beschikbaar onder de namen: python-gi, python-gobject or pygobject).</description>
+      <description>&lt;p&gt;Dit is de standaard API die momenteel in de app gebruikt wordt. Deze API haalt informatie op van een MPRIS compatibele media speler (MPRIS is een standaard interface ondersteund door vrijwel alle media spelers op Linux). Alles wat je nodig hebt zijn de volgende libraries, deze zijn waarschijnlijk al op je systeem geïnstalleerd:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pygobject.readthedocs.io/en/latest/&#34;&gt;PyGI&lt;/a&gt; (niet beschikbaar op PyPi, installeer deze vanuit je distributie repository - meestal is deze beschikbaar onder de namen: python-gi, python-gobject or pygobject). Hier is een korte &lt;a href=&#34;https://pygobject.readthedocs.io/en/latest/getting_started.html&#34;&gt;tutorial&lt;/a&gt; voor de meeste systemen.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Spotify voor Windows en Mac OS</title>
       <link>https://vidify.org/nl/wiki/spotify-for-windows-and-macos/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/spotify-for-windows-and-macos/</guid>
-      <description>Dit is de standaard API voor Windows en Mac OS gebruikers. Je hebt geen extra libraries nodig, omdat deze automatisch worden geïnstalleerd voor deze besturingssystemen.
-Actuele limitaties De gebruikte library SwSpotify om informatie op te vragen van de Spotify API, kan niet de positie hiervan bepalen. De app is niet getest op Mac OS, omdat de emulators hiervoor nogal gelimiteerd zijn. Mocht je problemen ondervinden, open dan een issue met gedetailleerde informatie over je probleem.</description>
+      <description>&lt;p&gt;Dit is de standaard API voor Windows en Mac OS gebruikers. Je hebt geen extra libraries nodig, omdat deze automatisch worden geïnstalleerd voor deze besturingssystemen.&lt;/p&gt;&#xA;&lt;h3 id=&#34;actuele-limitaties&#34;&gt;Actuele limitaties&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;De gebruikte library &lt;a href=&#34;https://github.com/SwagLyrics/SwSpotify&#34;&gt;SwSpotify&lt;/a&gt; om informatie op te vragen van de Spotify API, kan niet de positie hiervan bepalen.&lt;/li&gt;&#xA;&lt;li&gt;De app is niet getest op Mac OS, omdat de emulators hiervoor nogal gelimiteerd zijn. Mocht je problemen ondervinden, open dan een &lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;issue&lt;/a&gt; met gedetailleerde informatie over je probleem.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Spotify Web API</title>
       <link>https://vidify.org/nl/wiki/spotify-web-api/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/spotify-web-api/</guid>
-      <description>Voor alle ondersteunde besturingssystemen is het mogelijk om media data op te vragen van de Spotify desktop app. Echter, dit kan minder betrouwbaar zijn dan de officiële web API, of functies missen die de web API wel heeft. Zo heb je met de Spotify web API ook controle over muziek die afspeelt op andere apparaten dan die waarop Vidify is geïnstalleerd. Dat gezegd hebbende, er zijn ook nadelen:
-Je moet inloggen en het (eenmalig) handmatig instellen Alleen Spotify Premium gebruikers kunnen alle functies gebruiken De hoeveelheid verzoeken die je via de web API kunt doen is gelimiteerd Er wordt meer data verstuurd over het internet, vanwege de constante verbinding met Spotify De eenvoudigste manier om de web API te activeren is door deze te selecteren in de GUI nadat de app voor de eerste keer is opgestart.</description>
+      <description>&lt;p&gt;Voor alle ondersteunde besturingssystemen is het mogelijk om media data op te vragen van de Spotify desktop app. Echter, dit kan minder betrouwbaar zijn dan de officiële web API, of functies missen die de web API wel heeft. Zo heb je met de Spotify web API ook controle over muziek die afspeelt op andere apparaten dan die waarop Vidify is geïnstalleerd. Dat gezegd hebbende, er zijn ook nadelen:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Je moet inloggen en het (eenmalig) handmatig instellen&lt;/li&gt;&#xA;&lt;li&gt;Alleen Spotify Premium gebruikers kunnen alle functies gebruiken&lt;/li&gt;&#xA;&lt;li&gt;De hoeveelheid verzoeken die je via de web API kunt doen is gelimiteerd&lt;/li&gt;&#xA;&lt;li&gt;Er wordt meer data verstuurd over het internet, vanwege de constante verbinding met Spotify&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;De eenvoudigste manier om de web API te activeren is door deze te selecteren in de GUI nadat de app voor de eerste keer is opgestart. Nadat je de web API hebt geselecteerd, vraagt Vidify om je &amp;lsquo;Client ID&amp;rsquo; en &amp;lsquo;Client secret&amp;rsquo; Deze sleutels gebruikt Spotify om toegang te krijgen tot jouw gegevens (welke nummer je nu afspeelt) vanuit externe bronnen. Dit is hoe je jouw &amp;lsquo;Client ID&amp;rsquo; en &amp;lsquo;Client secret&amp;rsquo; vindt:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Website Lancering</title>
       <link>https://vidify.org/nl/blog/launch/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/blog/launch/</guid>
-      <description>Ik lanceer officieel de Vidify website!
-Deze website is bedoeld voor niet-ontwikkelaars. Het gedeelte van de documentatie op GitHub dat gaat over het gebruik van Vidify wordt hier naartoe gemigreerd. Het onderhoud van de wiki gaat hier gemakkelijker, omdat het eenvoudig is om verschillende talen toe te voegen, en iedereen kan nog steeds bijdragen door een PR te maken naar vidify/vidify.org-source.
-De ruwe kantjes moeten er nog vanaf, maar de website is klaar voor het grote publiek.</description>
+      <description>&lt;p&gt;Ik lanceer officieel de Vidify website!&lt;/p&gt;&#xA;&lt;p&gt;Deze website is bedoeld voor niet-ontwikkelaars. Het gedeelte van de documentatie op &lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;GitHub&lt;/a&gt; dat gaat over het gebruik van Vidify wordt hier naartoe gemigreerd. Het onderhoud van de wiki gaat hier gemakkelijker, omdat het eenvoudig is om verschillende talen toe te voegen, en iedereen kan nog steeds bijdragen door een PR te maken naar &lt;a href=&#34;https://github.com/vidify/vidify.org-source&#34;&gt;vidify/vidify.org-source&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;De ruwe kantjes moeten er nog vanaf, maar de website is klaar voor het grote publiek. Als je problemen vindt laat dit dan weten in een issue op GitHub.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Het externe speler protocol</title>
       <link>https://vidify.org/nl/wiki/the-external-player-protocol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/wiki/the-external-player-protocol/</guid>
-      <description>De externe media speler definieert een publiek model om te volgen bij het communiceren met andere apparaten. Op deze manier kan iedereen deze in hun app of programma implementeren om de video daar af te spelen. Hier is een gedetailleerde beschrijving over hoe je dat doet:
-Initialiseren van de verbinding Om met apparaten te verbinden wordt gebruik gemaakt van een DNS-based Service Discovery (DNS-SD). De Vidify server registreert zichzelf op het netwerk, en iedereen daarin kan daarmee verbinden.</description>
+      <description>&lt;p&gt;De externe media speler definieert een publiek model om te volgen bij het communiceren met andere apparaten. Op deze manier kan iedereen deze in hun app of programma implementeren om de video daar af te spelen. Hier is een gedetailleerde beschrijving over hoe je dat doet:&lt;/p&gt;&#xA;&lt;h2 id=&#34;initialiseren-van-de-verbinding&#34;&gt;Initialiseren van de verbinding&lt;/h2&gt;&#xA;&lt;p&gt;Om met apparaten te verbinden wordt gebruik gemaakt van een &lt;a href=&#34;https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD&#34;&gt;DNS-based Service Discovery (DNS-SD)&lt;/a&gt;. De Vidify server registreert zichzelf op het netwerk, en iedereen daarin kan daarmee verbinden.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

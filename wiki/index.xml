@@ -4,69 +4,53 @@
     <title>Wiki on Vidify</title>
     <link>https://vidify.org/wiki/</link>
     <description>Recent content in Wiki on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/wiki/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <lastBuildDate>Sun, 05 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vidify.org/wiki/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FAQ</title>
       <link>https://vidify.org/wiki/faq/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/faq/</guid>
-      <description>My favorite music player isn&amp;rsquo;t supported by Vidify Vidify was created with this in mind. There are many different music players and we are working on supporting as many of them as possible. Please do let us know so that we know what players are more popular.
-Vidify doesn&amp;rsquo;t recognize some downloaded songs If the song doesn&amp;rsquo;t have a metadata field with its title and artist (the latter is optional), Vidify is unable to know what song is playing.</description>
+      <description>&lt;h3 id=&#34;my-favorite-music-player-isnt-supported-by-vidify&#34;&gt;My favorite music player isn&amp;rsquo;t supported by Vidify&lt;/h3&gt;&#xA;&lt;p&gt;Vidify was created with this in mind. There are many different music players and we are working on supporting as many of them as possible. Please do &lt;a href=&#34;https://github.com/vidify/vidify/issues/new&#34;&gt;let us know&lt;/a&gt; so that we know what players are more popular.&lt;/p&gt;&#xA;&lt;h3 id=&#34;vidify-doesnt-recognize-some-downloaded-songs&#34;&gt;Vidify doesn&amp;rsquo;t recognize some downloaded songs&lt;/h3&gt;&#xA;&lt;p&gt;If the song doesn&amp;rsquo;t have a metadata field with its title and artist (the latter is optional), Vidify is unable to know what song is playing. Try to modify the metadata of your downloaded songs with VLC or any other tool.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Linux Media Players</title>
       <link>https://vidify.org/wiki/linux-media-players/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/linux-media-players/</guid>
-      <description>This is the most recommended API for Linux users. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:
-PyGI (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called python-gi, python3-gobject or pygobject).</description>
+      <description>&lt;p&gt;This is the most recommended API for Linux users. It obtains information from any MPRIS compatible media player (MPRIS is a standard interface widely used for media players on Linux). All you may need to install are the following libraries, although they will probably be installed in your system already:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pygobject.readthedocs.io/en/latest/&#34;&gt;PyGI&lt;/a&gt; (not packaged on PyPi, you need to install it from your distribution&amp;rsquo;s repository - it&amp;rsquo;s usually called &lt;code&gt;python-gi&lt;/code&gt;, &lt;code&gt;python3-gobject&lt;/code&gt; or &lt;code&gt;pygobject&lt;/code&gt;). Here&amp;rsquo;s a quick &lt;a href=&#34;https://pygobject.readthedocs.io/en/latest/getting_started.html&#34;&gt;tutorial&lt;/a&gt; on how to install it on most systems.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Spotify for Windows and Mac OS</title>
       <link>https://vidify.org/wiki/spotify-for-windows-and-macos/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/spotify-for-windows-and-macos/</guid>
-      <description>This is the default API for Windows and Mac OS users. You don&amp;rsquo;t have to install anything, since it&amp;rsquo;s already installed by default on these platforms.
-Current limitations The library used to access information from the Spotify API is unable to obtain its position. Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an issue with detailed information. </description>
+      <description>&lt;p&gt;This is the default API for Windows and Mac OS users. You don&amp;rsquo;t have to install anything, since it&amp;rsquo;s already installed by default on these platforms.&lt;/p&gt;&#xA;&lt;h3 id=&#34;current-limitations&#34;&gt;Current limitations&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The &lt;a href=&#34;https://github.com/SwagLyrics/SwSpotify&#34;&gt;library used&lt;/a&gt; to access information from the Spotify API is unable to obtain its position.&lt;/li&gt;&#xA;&lt;li&gt;Mac OS usage hasn&amp;rsquo;t been tested because their emulators are really limited. If you&amp;rsquo;re having issues, please open an &lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;issue&lt;/a&gt; with detailed information.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
-    
     <item>
       <title>Spotify Web API</title>
       <link>https://vidify.org/wiki/spotify-web-api/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/spotify-web-api/</guid>
-      <description>All the supported platforms have a way to obtain song data from the desktop Spotify app, but it may not be as reliable as the official web API, or may lack features in comparison to it. For example, with the Spotify Web API, you can control the music on other devices other than where Vidify is running. However, it also brings other downsides:
-You have to sign in and set it up manually (only once though) Only Spotify Premium users are able to use some functions API calls are limited More internet usage is needed to continuously communicate with Spotify The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time.</description>
+      <description>&lt;p&gt;All the supported platforms have a way to obtain song data from the desktop Spotify app, but it may not be as reliable as the official web API, or may lack features in comparison to it. For example, with the Spotify Web API, you can control the music on other devices other than where Vidify is running. However, it also brings other downsides:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;You have to sign in and set it up manually (only once though)&lt;/li&gt;&#xA;&lt;li&gt;Only Spotify Premium users are able to use some functions&lt;/li&gt;&#xA;&lt;li&gt;API calls are limited&lt;/li&gt;&#xA;&lt;li&gt;More internet usage is needed to continuously communicate with Spotify&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;The simplest way to activate the web API is by selecting it in the GUI when the app is launched for the first time. After selecting the Spotify Web API, Vidify will ask you for your Client ID and Client secret. These are the keys Spotify uses to access your account&amp;rsquo;s data from external sources (the currently playing song). Here&amp;rsquo;s how to obtain them:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The Audiosync extension</title>
       <link>https://vidify.org/wiki/audiosync-extension/</link>
-      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Sun, 05 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/audiosync-extension/</guid>
-      <description>You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.
-The full repository is in vidify/audiosync. It&amp;rsquo;s still Work-In-Progress, so it might be harder to use.
-Audiosync is only available on Linux for now.</description>
+      <description>&lt;p&gt;You&amp;rsquo;ll realize that some videos aren&amp;rsquo;t exactly in sync. That&amp;rsquo;s because the videos are played from YouTube, and they are usually different versions of the song, have intros and outros&amp;hellip; which mess up the timing. Although this is very complicated to fix, Vidify has an audio synchronization extension that tries to.&lt;/p&gt;&#xA;&lt;p&gt;The full repository is in &lt;a href=&#34;https://github.com/vidify/audiosync&#34;&gt;vidify/audiosync&lt;/a&gt;. It&amp;rsquo;s still Work-In-Progress, so it might be harder to use.&lt;/p&gt;&#xA;&lt;p&gt;Audiosync is only available on Linux for now. It&amp;rsquo;s strongly recommended to use Mpv as the video player because it&amp;rsquo;s more precise. You can install it with &lt;code&gt;pip install vidify[audiosync]&lt;/code&gt;, along with the following dependencies:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>The external player protocol</title>
       <link>https://vidify.org/wiki/the-external-player-protocol/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/wiki/the-external-player-protocol/</guid>
-      <description>The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&amp;rsquo;s a more detailed description of how to do so:
-Establishing the connection To connect the devices, a DNS-based Service Discovery (DNS-SD) mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.</description>
+      <description>&lt;p&gt;The external player defines a public model to follow to communicate with other devices. That way, anyone can implement their own app or program to display the videos. Here&amp;rsquo;s a more detailed description of how to do so:&lt;/p&gt;&#xA;&lt;h2 id=&#34;establishing-the-connection&#34;&gt;Establishing the connection&lt;/h2&gt;&#xA;&lt;p&gt;To connect the devices, a &lt;a href=&#34;https://en.wikipedia.org/wiki/Zero-configuration_networking#DNS-SD&#34;&gt;DNS-based Service Discovery (DNS-SD)&lt;/a&gt; mechanism is used. The Vidify server will register itself in the network, and anyone inside it will be able to connect to it.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

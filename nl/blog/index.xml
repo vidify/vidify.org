@@ -4,19 +4,18 @@
     <title>Laatste Nieuws on Vidify</title>
     <link>https://vidify.org/nl/blog/</link>
     <description>Recent content in Laatste Nieuws on Vidify</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>nl-nl</language>
-    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://vidify.org/nl/blog/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>marioortizmanero at gmail dot com (Mario Ortiz Manero)</managingEditor>
+    <webMaster>marioortizmanero at gmail dot com (Mario Ortiz Manero)</webMaster>
+    <lastBuildDate>Thu, 02 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://vidify.org/nl/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Website Lancering</title>
       <link>https://vidify.org/nl/blog/launch/</link>
-      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
-      
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate><author>marioortizmanero at gmail dot com (Mario Ortiz Manero)</author>
       <guid>https://vidify.org/nl/blog/launch/</guid>
-      <description>Ik lanceer officieel de Vidify website!
-Deze website is bedoeld voor niet-ontwikkelaars. Het gedeelte van de documentatie op GitHub dat gaat over het gebruik van Vidify wordt hier naartoe gemigreerd. Het onderhoud van de wiki gaat hier gemakkelijker, omdat het eenvoudig is om verschillende talen toe te voegen, en iedereen kan nog steeds bijdragen door een PR te maken naar vidify/vidify.org-source.
-De ruwe kantjes moeten er nog vanaf, maar de website is klaar voor het grote publiek.</description>
+      <description>&lt;p&gt;Ik lanceer officieel de Vidify website!&lt;/p&gt;&#xA;&lt;p&gt;Deze website is bedoeld voor niet-ontwikkelaars. Het gedeelte van de documentatie op &lt;a href=&#34;https://github.com/vidify/vidify&#34;&gt;GitHub&lt;/a&gt; dat gaat over het gebruik van Vidify wordt hier naartoe gemigreerd. Het onderhoud van de wiki gaat hier gemakkelijker, omdat het eenvoudig is om verschillende talen toe te voegen, en iedereen kan nog steeds bijdragen door een PR te maken naar &lt;a href=&#34;https://github.com/vidify/vidify.org-source&#34;&gt;vidify/vidify.org-source&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;De ruwe kantjes moeten er nog vanaf, maar de website is klaar voor het grote publiek. Als je problemen vindt laat dit dan weten in een issue op GitHub.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
